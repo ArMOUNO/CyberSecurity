@@ -3,11 +3,119 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- materialize cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <link href="./css/output.css" rel="stylesheet">
 </head>
 <body>
-  <h1 class="text-8xl font-bold underline">
-    Hello world!
-  </h1>
+  
+                                  <!-- LG Screen NavBar -->
+     <section class=" teal darken-4 shadow-lg">
+         <div >
+              <!-- Dropdown Structure -->
+              <ul id="dropdown1" class="dropdown-content">
+                  <div>
+                    <li><a href="#!">one</a></li>
+                    <li><a href="#!">two</a></li>
+                    <li><a href="#!">one</a></li>
+                    <li><a href="#!">two</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#!">three</a></li>
+                  </div>
+              </ul>
+              <ul id="dropdown2" class="dropdown-content">
+                <div>
+                  <li><a href="#!">three</a></li>
+                  <li><a href="#!">three</a></li>
+                  <li><a href="#!">three</a></li>
+                  <li><a href="#!">three</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!">bbbb</a></li>
+                </div>
+            </ul>
+            <ul id="dropdown2" class="dropdown-content">
+              <div>
+                <li><a href="#!">About</a></li>
+                <li><a href="#!">About</a></li>
+                <li><a href="#!">About</a></li>
+                <li><a href="#!">About</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">bbbb</a></li>
+              </div>
+          </ul>
+
+              <nav class="teal darken-4">
+                <div class="nav-wrapper teal darken-4 mx-3 ">
+                  <a href="#!" class="brand-logo ">Logo</a>
+                    <!-- Sm Screen Side navBar -->
+                  <section>
+                    <ul id="slide-out" class="sidenav">
+                      <li><div class="user-view">
+                        <div class="background">
+                          <img src="images/office.jpg">
+                        </div>
+                        <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+                        <a href="#name"><span class="white-text name">John Doe</span></a>
+                        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                      </div></li>
+                      <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+                      <li><a href="#!">Second Link</a></li>
+                      <li><div class="divider"></div></li>
+                      <li><a class="subheader">Subheader</a></li>
+                      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+                    </ul>
+                    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                   </section>
+
+                  <ul class="right hide-on-med-and-down">
+                    <li><a href="sass.html">Home</a></li>
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Product<i class="material-icons right" style="margin-left: 5px;">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Service<i class="material-icons right" style="margin-left: 5px;">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">About<i class="material-icons right" style="margin-left: 5px;">arrow_drop_down</i></a></li>
+                    <li><a href="sass.html">Contact</a></li>
+                  </ul>
+                </div>
+              </nav>
+         </div>
+     </section>
+
+   <div class="Banner flex flex-col justify-center ">  
+        <div class=" content font-bold text-white pl-3 gap-y-2 flex flex-col items-start >
+          <p class="text-xl">Need any kind of IT Services & consultency! </p>
+          <p class="text-4xl">We are Experienced In Network & Cyber Security Services</p>
+          <p class="text-xl">With our expertise in IT services, you get an experienced team of specialists with added benefit of better service quality.</p>
+        </div>
+        <div class="ml-3 rounded-lg pt-3 flex gap-x-4">
+          <a class="waves-effect waves-light btn cyan darken- ">More</a>
+          <a class="waves-effect waves-light btn cyan darken-">Contact US</a>
+        </div>        
+         
+    </div>   
+
+    <div>
+        <div class="flex flex-col items-center justify-center">
+          <p class="text-3xl font-bold">Technology PartnerShip</p>
+          <div class="carousel">
+            <a class="carousel-item" href="#one!">  <img class="w-" src="/assets/images/bird_2.jpg" alt=""></a>
+            <a class="carousel-item" href="#two!">  <img class="w-" src="/assets/images/bird_2.jpg" alt=""></a>
+            <a class="carousel-item" href="#three!"><img class="w-" src="/assets/images/bird_2.jpg" alt=""></a>
+            <a class="carousel-item" href="#four!"> <img class="w-" src="/assets/images/bird_2.jpg" alt=""></a>
+            <a class="carousel-item" href="#five!"> <img class="w-" src="/assets/images/bird_2.jpg" alt=""></a>
+          </div>
+          
+        </div>
+    </div>
+
+
+
+  <!-- Include jQuery for Materialize JS -->
+  <script src="path/to/your/carousel-plugin.js"></script> <!-- Include your carousel plugin JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ 
+  <!-- JS script -->
+  <script src="./js/script.js"></script>
 </body>
 </html>

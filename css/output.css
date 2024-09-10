@@ -554,15 +554,167 @@ video {
   --tw-contain-style:  ;
 }
 
-.text-8xl {
-  font-size: 6rem;
-  line-height: 1;
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-x-4 {
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+
+.gap-y-2 {
+  row-gap: 0.5rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.pl-3 {
+  padding-left: 0.75rem;
+}
+
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
   font-weight: 700;
 }
 
-.underline {
-  text-decoration-line: underline;
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+#dropdown1 {
+  border-radius: 10px;
+  /* Rounded corners */
+  border: 1px solid #ccc;
+  /* Optional border */
+  background-color: white;
+  /* Optional background */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  /* Optional shadow */
+}
+
+.Banner {
+  position: relative;
+  height: 500px;
+  /* Default height */
+  width: 100%;
+  /* Full width */
+  overflow: hidden;
+  /* Hide anything that overflows */
+}
+
+.Banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/images/Cyber.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Black with 50% opacity */
+  z-index: 1;
+  /* Ensure it sits behind the content */
+  filter: brightness(50%);
+  /* Optional: adjust brightness to enhance the overlay effect */
+}
+
+.Banner .content {
+  position: relative;
+  /* Ensure content sits above the background image */
+  z-index: 10;
+  /* Ensure content is above the background */
+  color: white;
+  /* Adjust text color if needed */
+  text-align: center;
+  /* Center text if needed */
+  /* Add some padding if needed */
+}
+
+@media (max-width: 768px) {
+  .Banner {
+    height: 300px;
+    /* Adjust height for smaller screens */
+  }
+}
+
+.carousel {
+  width: 300%;
+  /* Make carousel full width */
+  overflow: hidden;
+  /* Hide overflow */
+}
+
+.carousel-item img {
+  width: 500%;
+  /* Adjust to fit the width of the carousel */
+  height: auto;
+  /* Maintain aspect ratio */
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* Ensure images cover the space */
+}
+
+/* Optional: If you want to set a specific size */
+
+.carousel-item {
+  width: 600px;
+  /* Set width of carousel items */
+  height: 400px;
+  /* Set height of carousel items */
 }
