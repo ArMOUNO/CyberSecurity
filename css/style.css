@@ -1,16 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
-#dropdown1 {
-    border-radius: 10px;       /* Rounded corners */
-    border: 1px solid #ccc;    /* Optional border */
-    background-color: white;   /* Optional background */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+.dropdown {
+    position: relative;
   }
+  
+  .dropdown-content {
+    position: absolute; /* or fixed, depending on your layout */
+    top: -10px; /* Initial position above the visible area */
+    left: 0;
+    border-radius: 10px;
+    text-align: center;
+    /* background-color: #1a1919; */
+    box-shadow: 0px 4px 6px rgba(239, 243, 240, 0.333);
+    transition: top 0.4s ease-out; /* Smooth transition for the slide effect */
+    opacity: 0; /* Hide initially */
+    z-index: 10;
+  }
+  .dropdown.active .dropdown-content {
+    top: 10px; /* Final position */
+    opacity: 1; /* Make it visible */
+  }
+  
   .Banner {
     position: relative;
+
     height: 500px; /* Default height */
     width: 100%; /* Full width */
     overflow: hidden; /* Hide anything that overflows */
@@ -36,7 +53,7 @@
     position: relative; /* Ensure content sits above the background image */
     z-index: 10; /* Ensure content is above the background */
     color: white; /* Adjust text color if needed */
-    text-align: center; /* Center text if needed */
+    /* Center text if needed */
      /* Add some padding if needed */
 }
 
@@ -45,19 +62,78 @@
         height: 300px; /* Adjust height for smaller screens */
     }
 }
-.carousel {
-    width: 300%; /* Make carousel full width */
-    overflow: hidden; /* Hide overflow */
+.textBanner{
+    font-family: "Reddit Sans Condensed", sans-serif;
 }
 
-.carousel-item img {
-    width: 500%; /* Adjust to fit the width of the carousel */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensure images cover the space */
+.navBargr{
+    background: linear-gradient(to bottom, 
+    black, 
+    black, /* Very dark gray */
+    black, /* Dark gray */
+    #000000, /* Gray */
+    #000000, /* Light gray */
+    #1a1919); /* Very light gray */
+
 }
 
-/* Optional: If you want to set a specific size */
-.carousel-item {
-    width: 600px; /* Set width of carousel items */
-    height: 400px; /* Set height of carousel items */
+/* Optional: Style the close button */
+  
+/* Sidenav styling for small screens */
+@media (max-width: 768px) { /* Adjust the max-width as needed for small screens */
+    .sidenav {
+      display: block; /* Ensure sidenav is displayed on small screens */
+    }
+  }
+  
+  /* Hide sidenav on larger screens */
+  @media (min-width: 769px) {
+    .sidenav {
+      display: none; /* Hide sidenav on larger screens */
+    }
+  }
+  /* Base styling for the sidenav */
+.sidenav {
+  /* Ensure the sidenav is full-height and aligned properly */
+  height: 100%;
+}
+
+/* Image and close button styling */
+.background {
+  position: relative; /* Position relative to place the close button */
+}
+
+.background-image {
+  width: 100%; /* Make sure the image covers the full width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Style for the close button */
+.sidenav-close {
+  position: absolute; /* Position absolutely within the relative container */
+  top: 0px; /* Adjust top position as needed */
+  left: 200px; /* Adjust right position as needed */
+  color: #fff; /* Change color if needed */
+  font-size: 2rem; /* Adjust size as needed */
+  z-index: 1; /* Ensure it appears over the image */
+}
+
+/* Optional: Style for user-view and other elements */
+.user-view {
+  text-align: center;
+}
+.glass{
+    background: linear-gradient(135deg, rgba(155, 151, 151, 0.215), rgba(255, 255, 255, 0.416));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.WhySec{
+    background-image: url('../assets/images/whyback.jpg'); /* Path to your image */
+    background-size: cover;       /* Ensure the background covers the section */
+    background-position: center;  /* Center the background image */
+    background-repeat: no-repeat; /* Avoid repeating the image */
+    height: 700px;   
 }

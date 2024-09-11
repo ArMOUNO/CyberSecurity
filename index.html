@@ -6,22 +6,30 @@
   <!-- materialize cdn -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.10/dist/tailwind.min.css" rel="stylesheet">
+<!-- font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&display=swap" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
   <link href="./css/output.css" rel="stylesheet">
 </head>
 <body>
   
                                   <!-- LG Screen NavBar -->
-     <section class=" teal darken-4 shadow-lg">
-         <div >
+     <section class="  shadow-lg">
+         <div class="">
               <!-- Dropdown Structure -->
+             <div class="dropdown">
+      
               <ul id="dropdown1" class="dropdown-content">
                   <div>
-                    <li><a href="#!">one</a></li>
-                    <li><a href="#!">two</a></li>
-                    <li><a href="#!">one</a></li>
-                    <li><a href="#!">two</a></li>
-                    <li class="divider"></li>
+                    <li><a href="#!">Cisco</a></li>
+                    <li><a href="#!">Fortinet</a></li>
+                    <li><a href="#!">Sophos</a></li>
+                    <li><a href="#!">MicroSoft</a></li>
+                    <!-- <li class="divider"></li> -->
                     <li><a href="#!">three</a></li>
                   </div>
               </ul>
@@ -31,84 +39,220 @@
                   <li><a href="#!">three</a></li>
                   <li><a href="#!">three</a></li>
                   <li><a href="#!">three</a></li>
-                  <li class="divider"></li>
+                  <!-- <li class="divider"></li> -->
                   <li><a href="#!">bbbb</a></li>
                 </div>
             </ul>
-            <ul id="dropdown2" class="dropdown-content">
+            <ul id="dropdown3" class="dropdown-content">
               <div>
                 <li><a href="#!">About</a></li>
                 <li><a href="#!">About</a></li>
                 <li><a href="#!">About</a></li>
                 <li><a href="#!">About</a></li>
-                <li class="divider"></li>
+                <!-- <li class="divider"></li> -->
                 <li><a href="#!">bbbb</a></li>
               </div>
           </ul>
-
-              <nav class="teal darken-4">
-                <div class="nav-wrapper teal darken-4 mx-3 ">
-                  <a href="#!" class="brand-logo ">Logo</a>
+        </div>  
+              <nav class="bg-black navBargr shadow-green-600 flex justify-between">
+                <div class="nav-wrapper shadow-green-600 mx-3 ">
+                  <div class="flex">
+                    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons ">menu</i></a>
+                    <a href="#!" class="brand-logo ml-24 md:ml-0 ">Logo</a>
+                  </div>
                     <!-- Sm Screen Side navBar -->
-                  <section>
-                    <ul id="slide-out" class="sidenav">
-                      <li><div class="user-view">
-                        <div class="background">
-                          <img src="images/office.jpg">
-                        </div>
-                        <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
-                        <a href="#name"><span class="white-text name">John Doe</span></a>
-                        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
-                      </div></li>
-                      <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-                      <li><a href="#!">Second Link</a></li>
-                      <li><div class="divider"></div></li>
-                      <li><a class="subheader">Subheader</a></li>
-                      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-                    </ul>
-                    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                   </section>
+                    <section>                                                                      
+                              <div id="slide-out" class="sidenav rounded-md h-[700px] ">  
+                              <div class="user-view relative">
+                                <div class="background">
+                                  <img src="./assets/images/Cyber.jpg">
+                                </div>
+                                
+                                <a href="#" class="sidenav-close "><p class="absolute left-12 top-2  w-8 h-8 bg-opacity-55 flex items-center rounded-full bg-gray-300"><i class="material-icons opacity-100 text-white  transform transition-transform duration-300 hover:scale-125 active:scale-90">navigate_before</i></p></a>
+                                
+                                <a href="#user"><img class="circle" src="./assets/images/bird_2.jpg"></a>
+                                <a href="#name"><span class="white-text name">From Networks to Cybersecurity Mastery</span></a>
+                                <!-- <a href="#email"><span class="white-text email">jGuardians of the Grid</span></a> -->
+                              </div>
+                              <div class="wrapper">
+                                <div class="menu">
+                    
+                                      <div class="nav">
+                                            <ul class="main-menu">
+                                                  <li class="main-menu-item">
+                                                        <a href="#">Home</a>
+                                                  </li>
+                    
+                                                  <li class="main-menu-item">
+                                                        <a href="#"> Products &nbsp; <ion-icon name="add"></ion-icon></a>
+                    
+                                                        <ul class="submenu">
+                                                              <li class="submenu-item">
+                                                                    <a href="#">Fonts</a>
+                                                              </li>
+                                                              <li class="submenu-item">
+                                                                    <a href="#">Mockups</a>
+                                                              </li>
+                                                              <li class="submenu-item">
+                                                                    <a href="#">Presets</a>
+                                                              </li>
+                                                        </ul>
+                                                  </li>
+                    
+                                                  <li class="main-menu-item">
+                                                        <a href="#">Service &nbsp; <ion-icon name="add"></ion-icon></a>
+                    
+                                                        <!-- <ul class="submenu">
+                                                              <li class="submenu-item">
+                                                                    <a href="#">Timeless flow</a>
+                                                              </li>
+                                                              <li class="submenu-item">
+                                                                    <a href="#">Foretime</a>
+                                                              </li>
+                                                              <li class="submenu-item">
+                                                                    <a href="#">Never again</a>
+                                                              </li>
+                                                              <li class="submenu-item">
+                                                                    <a href="#">Departure</a>
+                                                              </li>
+                                                        </ul> -->
+                                                  </li>
+                    
+                    
+                                                  <li class="main-menu-item">
+        
+                    
+                                                <li class="main-menu-item">
+                                                      <a href="#">About</a>
+                                                </li>
+                                                        <!-- <ul class="submenu">
+                                                              <li class="submenu-item">
+                                                                    <a href="#">Call now</a>
+                                                              </li>
+                                                              <li class="submenu-item">
+                                                                    <a href="#">Mail us</a>
+                                                              </li>
+                                                        </ul> -->
+                                                  </li>
+                                            </ul>
+                                      </div>
+    
+                                </div>
+                          </div>
+                      </div>
+                    </section>
+                    
 
-                  <ul class="right hide-on-med-and-down">
-                    <li><a href="sass.html">Home</a></li>
-                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Product<i class="material-icons right" style="margin-left: 5px;">arrow_drop_down</i></a></li>
-                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Service<i class="material-icons right" style="margin-left: 5px;">arrow_drop_down</i></a></li>
-                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">About<i class="material-icons right" style="margin-left: 5px;">arrow_drop_down</i></a></li>
-                    <li><a href="sass.html">Contact</a></li>
-                  </ul>
                 </div>
+                <ul class="hide-on-med-and-down gap-6 flex pr-3 ">
+                  <li class="navDark flex items-center ">
+                    <a href="sass.html" class="text-gray-600 relative text-[17px] hover:text-green-400 transform hover:scale-105 font-bold transition-all duration-300 ease-in-out">
+                      Home<span class="absolute  top-0 left-0 right-0 -z-10 border-b-2 border-green-500 rounded-md w-ull h-[55px]" ></span>
+                    </a>
+                  </li>
+                  <li class="navDark flex items-center ">
+                    <a class="dropdown-trigger text-gray-600 relative text-[17px] hover:text-green-400 transform hover:scale-105 font-bold transition-all duration-300 ease-in-out flex items-center" href="#!" data-target="dropdown1">
+                      Product<span class="absolute  top-0 left-0 right-0 -z-10 border-b-2 border-green-500 rounded-md w-ull h-[55px]"></span>
+                      <i class="material-icons right ml-2">arrow_drop_down</i>
+                    </a>
+                  </li>
+                  <li class="navDark flex items-center">
+                    <a class="dropdown-trigger text-gray-600 relative text-[17px] hover:text-green-400 transform hover:scale-105 font-bold transition-all duration-300 ease-in-out flex items-center" href="#!" data-target="dropdown2">
+                      Service<span class="absolute  top-0 left-0 right-0 -z-10 border-b-2 border-green-500 rounded-md w-ull h-[55px]"></span>
+                      <i class="material-icons right ml-2">arrow_drop_down</i>
+                    </a>
+                  </li>
+                  <li class="navDark flex items-center">
+                    <a class="dropdown-trigger text-gray-600 text-[17px] relative hover:text-green-400 transform hover:scale-105 font-bold transition-all duration-300 ease-in-out flex items-center" href="#!" data-target="dropdown3">
+                      About<span class="absolute  top-0 left-0 right-0 -z-10 border-b-2 border-green-500 rounded-md w-ull h-[55px]"></span>
+                      <i class="material-icons right ml-2">arrow_drop_down</i>
+                    </a>
+                  </li>
+                  <li class="navDark flex items-center">
+                    <a href="sass.html" class="text-gray-600 relative text-[17px] hover:text-green-400 transform hover:scale-105 font-bold transition-all duration-300 ease-in-out">
+                      Contact<span class="absolute  top-0 left-0 right-0 -z-10 border-b-2 border-green-500 rounded-md w-ull h-[55px]"></span>
+                    </a>
+                  </li>
+                </ul>
+                
+                
               </nav>
          </div>
      </section>
 
-   <div class="Banner flex flex-col justify-center ">  
-        <div class=" content font-bold text-white pl-3 gap-y-2 flex flex-col items-start >
-          <p class="text-xl">Need any kind of IT Services & consultency! </p>
-          <p class="text-4xl">We are Experienced In Network & Cyber Security Services</p>
-          <p class="text-xl">With our expertise in IT services, you get an experienced team of specialists with added benefit of better service quality.</p>
+   <div class="Banner flex flex-col justify-end pb-10 md:justify-center z-0 ">  
+        <div class=" content font-bold text-white md:ml-8 ml-4 gap-y-4 md:gap-y-3 flex flex-col items-start ">
+          <p class="textBanner md:text-2xl text-xl ">Need any kind of IT Services & consultency!</p>
+          <p class="textBanner md:text-5xl text-sm text-start">We are Experienced In Network & Cyber Security Services</p>
+          <p class="textBanner md:text-2xl text-start text-sm md:flex">With our expertise in IT services, you get an experienced  team of specialists with added benefit of better service quality.</p> 
+        
         </div>
-        <div class="ml-3 rounded-lg pt-3 flex gap-x-4">
-          <a class="waves-effect waves-light btn cyan darken- ">More</a>
-          <a class="waves-effect waves-light btn cyan darken-">Contact US</a>
+        <div class="md:ml-8 ml-4 rounded-lg md:pt-3 pt-8 flex gap-x-4">
+          <a class="waves-effect waves-light btn  light-green darken-1 ">More</a>
+          <a class="waves-effect waves-light btn  light-green darken-1">Contact US</a>
         </div>        
          
     </div>   
+  <!-- PartnerShip -->
+    <!-- <section>
+        <div class="flex  flex-col items-center  justify-center">
+          <p class="md:text-5xl text-xl font-bold md:pt-[100px] pt-[50px] textBanner">Technology PartnerShip</p>
+          <p class="h-1 border-b-2 border-green-500 pt-3  w-[120px] md:w-[300px]"></p>
 
-    <div>
-        <div class="flex flex-col items-center justify-center">
-          <p class="text-3xl font-bold">Technology PartnerShip</p>
-          <div class="carousel">
-            <a class="carousel-item" href="#one!">  <img class="w-" src="/assets/images/bird_2.jpg" alt=""></a>
-            <a class="carousel-item" href="#two!">  <img class="w-" src="/assets/images/bird_2.jpg" alt=""></a>
-            <a class="carousel-item" href="#three!"><img class="w-" src="/assets/images/bird_2.jpg" alt=""></a>
-            <a class="carousel-item" href="#four!"> <img class="w-" src="/assets/images/bird_2.jpg" alt=""></a>
-            <a class="carousel-item" href="#five!"> <img class="w-" src="/assets/images/bird_2.jpg" alt=""></a>
+          <div class="carousel md:w-[700px] w-[370px]">
+            <a class="carousel-item" href="#one!"><img src="./assets/images/bird_2.jpg"></a>
+            <a class="carousel-item" href="#two!"><img src="./assets/images/bird_2.jpg"></a>
+            <a class="carousel-item" href="#three!"><img src="./assets/images/Cyber.jpg"></a>
+            <a class="carousel-item" href="#four!"><img src="./assets/images/Network.jp"></a>
+            <a class="carousel-item" href="#five!"><img src="./assets/images/bird_2.jpg"></a>
           </div>
           
         </div>
+    </section> -->
+
+
+   <section class="flex justify-center WhySec rounded-md textBanner   ">
+    <div class="w-[900px] md:mt-36 m-9 h-fit bg-black bg-opacity-15 rounded-lg backdrop-blur-md shadow-lg text-white md:flex flex flex-col md:flex-row   items-center justify-between p-4">
+         <div>
+             <img class="w-[400px]" src="./assets/images/whypic.jpg" alt="">
+         </div>
+         <div class="">
+                <p class="md:text-5xl text-2xl pt-4 md:pt-0">Why Choose Cyber</p>
+                
+                <div class="flex items-center gap-x-2 py-4">
+                  <i class="material-icons "style="font-size: 46px;">touch_app</i>
+                  <div>
+                     <p class="text-[19px] font-bold">Innovative Tech</p>
+                     <p class="text-[15px] font-thin">Leading-edge cybersecurity tools</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-x-2 py-4">
+                  <i class="material-icons "style="font-size: 46px;">touch_app</i>
+                  <div>
+                     <p class="text-[19px] font-bold">Innovative Tech</p>
+                     <p class="text-[15px] font-thin">Leading-edge cybersecurity tools</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-x-2 py-4">
+                  <i class="material-icons "style="font-size: 46px;">touch_app</i>
+                  <div>
+                     <p class="text-[19px] font-bold">Innovative Tech</p>
+                     <p class="text-[15px] font-thin">Leading-edge cybersecurity tools</p>
+                  </div>
+                </div>
+
+         </div>
     </div>
+    <div class="glass w-[200px] h-[150px]">
+      hii 
 
+    </div>
+    
+   </section>
 
+   <section>
+
+   </section>
 
   <!-- Include jQuery for Materialize JS -->
   <script src="path/to/your/carousel-plugin.js"></script> <!-- Include your carousel plugin JS -->
@@ -117,5 +261,9 @@
  
   <!-- JS script -->
   <script src="./js/script.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.4.1.js"></script> -->
+  <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 </body>
 </html>
