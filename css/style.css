@@ -68,12 +68,12 @@
 
 .navBargr{
     background: linear-gradient(to bottom, 
-    black, 
-    black, /* Very dark gray */
-    black, /* Dark gray */
-    #000000, /* Gray */
-    #000000, /* Light gray */
-    #1a1919); /* Very light gray */
+    rgb(239, 236, 236), 
+    rgb(243, 241, 241), /* Very dark gray */
+    rgb(255, 255, 255), /* Dark gray */
+    rgb(255, 255, 255), /* Gray */
+    #d0cfcf, /* Light gray */
+    #c4c3c3); /* Very light gray */
 
 }
 
@@ -136,4 +136,24 @@
     background-position: center;  /* Center the background image */
     background-repeat: no-repeat; /* Avoid repeating the image */
     height: 700px;   
+}
+/* Customize the width of the scrollbar */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+/* Handle (the part of the scrollbar that moves) */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #eaffff, #2fc6d7); 
+    border-radius: 10px; /* Rounded corners for a nicer look */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #00ffff; /* Brighter color when hovered */
 }
