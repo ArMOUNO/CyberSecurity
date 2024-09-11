@@ -24,29 +24,28 @@
     top: 10px; /* Final position */
     opacity: 1; /* Make it visible */
   }
-  
-  .Banner {
+  .backgroundImg{
     position: relative;
 
     height: 500px; /* Default height */
     width: 100%; /* Full width */
-    overflow: hidden; /* Hide anything that overflows */
-}
+    overflow: hidden;
+  }
+  
 
-.Banner::before {
+.backgroundImg::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/assets/images/Cyber.jpg');
+    background-image: url('/assets/images/herobg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: rgba(0, 0, 0, 0.6); /* Black with 50% opacity */
     z-index: 1; /* Ensure it sits behind the content */
-    filter: brightness(50%); /* Optional: adjust brightness to enhance the overlay effect */
+     /* Optional: adjust brightness to enhance the overlay effect */
 }
 
 .Banner .content {
@@ -72,7 +71,7 @@
     rgb(243, 241, 241), /* Very dark gray */
     rgb(255, 255, 255), /* Dark gray */
     rgb(255, 255, 255), /* Gray */
-    #d0cfcf, /* Light gray */
+    #f5f4f4, /* Light gray */
     #c4c3c3); /* Very light gray */
 
 }
@@ -136,6 +135,13 @@
     background-position: center;  /* Center the background image */
     background-repeat: no-repeat; /* Avoid repeating the image */
     height: 700px;   
+}
+.Section3{
+  background-image: url('../assets/images/Ellipse\ 14.png'); /* Path to your image */
+  background-size: cover;       /* Ensure the background covers the section */
+  background-position: center;  /* Center the background image */
+  background-repeat: no-repeat; /* Avoid repeating the image */
+  height: 700px;   
 }
 /* Customize the width of the scrollbar */
 ::-webkit-scrollbar {

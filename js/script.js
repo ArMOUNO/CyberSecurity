@@ -90,3 +90,18 @@ $(document).ready(function(){
                   t1.reversed(!t1.reversed());
             });
 
+            document.addEventListener("DOMContentLoaded", function() {
+              // GSAP ScrollTrigger animation
+              gsap.from(".box", {
+                opacity: 0,
+                scale: 0.5,
+                duration: 1,
+                stagger: 0.2,
+                ease: "power2.out",
+                scrollTrigger: {
+                  trigger: ".Section3",   // The section that will trigger the animation
+                  start: "top 80%",       // Start the animation when the section top is 80% in view
+                  toggleActions: "play none none none"  // Play the animation when entering the viewport
+                }
+              });
+            });
