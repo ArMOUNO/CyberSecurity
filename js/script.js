@@ -1,10 +1,11 @@
 // navBar
-$(document).ready(function(){
-    $(".dropdown-trigger").dropdown({
-      coverTrigger: false,  // Keeps the dropdown detached from the trigger
-      alignment: 'left'     // Aligns the dropdown to the left of the button (or use 'right')
-    });
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.dropdown-trigger');
+  M.Dropdown.init(elems, {
+    coverTrigger: false, // Optional, to control whether dropdown covers the trigger element
+    // hover: true,         // Optional, enable hover to trigger the dropdown
   });
+});
 //   sideNav
   document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
@@ -25,8 +26,6 @@ $(document).ready(function(){
       });
     }
   });
-  
-
   $(document).ready(function(){
     $('.sidenav').sidenav();
   });
