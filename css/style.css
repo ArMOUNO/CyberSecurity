@@ -10,13 +10,13 @@
   
   .dropdown-content {
     position: absolute; /* or fixed, depending on your layout */
-    top: -10px; /* Initial position above the visible area */
+    top: 10px; /* Initial position above the visible area */
     left: 0;
     border-radius: 10px;
     text-align: center;
     /* background-color: #1a1919; */
     box-shadow: 0px 4px 6px rgba(239, 243, 240, 0.333);
-    transition: top 0.4s ease-out; /* Smooth transition for the slide effect */
+    transition: top 0.1s ease-out; /* Smooth transition for the slide effect */
     opacity: 0; /* Hide initially */
     z-index: 10;
   }
@@ -26,12 +26,17 @@
   }
   .backgroundImg{
     position: relative;
-
-    height: 500px; /* Default height */
+    z-index: 0;
+    height: 600px; /* Default height */
     width: 100%; /* Full width */
     overflow: hidden;
   }
   
+  @media (max-width: 820px) {
+ .tabScren{
+  height: fit-content;
+ }
+}
 
 .backgroundImg::before {
     content: "";
@@ -40,11 +45,11 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/assets/images/herobg.jpg');
+    background-image: url('/assets/images/HeroBackGround.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: 1; /* Ensure it sits behind the content */
+    z-index: 0; /* Ensure it sits behind the content */
      /* Optional: adjust brightness to enhance the overlay effect */
 }
 
@@ -121,27 +126,33 @@
 .user-view {
   text-align: center;
 }
-.glass{
-    background: linear-gradient(135deg, rgba(155, 151, 151, 0.215), rgba(255, 255, 255, 0.416));
+.shadow{
+    background: linear-gradient(135deg, rgb(244, 244, 244), rgba(255, 255, 255, 0.95));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
     border:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
-.WhySec{
-    background-image: url('../assets/images/whyback.jpg'); /* Path to your image */
-    background-size: cover;       /* Ensure the background covers the section */
-    background-position: center;  /* Center the background image */
-    background-repeat: no-repeat; /* Avoid repeating the image */
-    height: 700px;   
+a:hover {
+  background-color: transparent !important;
 }
+.glass{
+  background: linear-gradient(135deg, rgba(155, 151, 151, 0.215), rgba(255, 255, 255, 0.416));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
 .Section3{
-  background-image: url('../assets/images/Ellipse\ 14.png'); /* Path to your image */
+  background-image: url('../assets/images/middleGreen.png'); /* Path to your image */
   background-size: cover;       /* Ensure the background covers the section */
   background-position: center;  /* Center the background image */
   background-repeat: no-repeat; /* Avoid repeating the image */
-  height: 700px;   
+  height: fit-content;   
+  z-index: 0;
 }
 /* Customize the width of the scrollbar */
 ::-webkit-scrollbar {
@@ -163,3 +174,8 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #00ffff; /* Brighter color when hovered */
 }
+
+
+/* sideNavCss */
+/* Hide submenus by default */
+/* Define the keyframes for the animation */
