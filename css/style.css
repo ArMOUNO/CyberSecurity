@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&display=swap'); */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -26,7 +26,7 @@
     top: 10px; /* Final position */
     opacity: 1; /* Make it visible */
   }
-  .backgroundImg{
+  .bgImage{
     position: relative;
     z-index: 0;
     height: 600px; /* Default height */
@@ -40,14 +40,14 @@
  }
 }
 
-.backgroundImg::before {
+.bgImage::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 180%;
     height: 100%;
-    background-image: url('/assets/images/HeroBackGround.png');
+    background-image: url('../assets/images/bannerBg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -68,8 +68,14 @@
         height: 300px; /* Adjust height for smaller screens */
     }
 }
-.textBanner{
-    font-family: "Reddit Sans Condensed", sans-serif;
+
+.thicktext{
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+}
+.thincText{
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
 }
 
 .navBargr{
@@ -79,7 +85,7 @@
     rgb(255, 255, 255), /* Dark gray */
     rgb(255, 255, 255), /* Gray */
     #ffffff, /* Light gray */
-    /* #c4c3c3); Very light gray */
+  ); Very light gray
 
 }
 
@@ -129,12 +135,12 @@
   text-align: center;
 }
 .shadow{
-    background: linear-gradient(135deg, rgb(244, 244, 244), rgba(255, 255, 255, 0.95));
+    background: linear-gradient(135deg, rgb(244, 244, 244), rgba(224, 222, 222, 0.493));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
     border:1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    box-shadow: 0 8px 32px 0 rgba(104, 103, 103, 0.37);
 }
 a:hover {
   background-color: transparent !important;
@@ -149,7 +155,7 @@ a:hover {
 }
 
 .Section3{
-  background-image: url('../assets/images/middleGreen.png'); /* Path to your image */
+  background-image: url('../assets/images/purplecircle.png'); 
   background-size: cover;       /* Ensure the background covers the section */
   background-position: center;  /* Center the background image */
   background-repeat: no-repeat; /* Avoid repeating the image */
@@ -201,3 +207,17 @@ a:hover {
 /* sideNavCss */
 /* Hide submenus by default */
 /* Define the keyframes for the animation */
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-scale-up {
+  animation: scaleUp 1s ease-in-out forwards;
+}

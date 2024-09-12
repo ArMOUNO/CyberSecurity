@@ -12,13 +12,16 @@
   
 <!-- font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&display=swap" rel="stylesheet">
 <link href="./css/style.css" rel="stylesheet">
 <link href="./css/output.css" rel="stylesheet">
 </head>
-<body class="textBanner scrollbar">
+<body class="thicktext">
   
                                   <!-- LG Screen NavBar -->
      <section class="  shadow-lg">
@@ -96,11 +99,11 @@
               </nav>
          </div>
      </section>
-<section class="backgroundImg tabScren flex  flex-col-reverse  md:flex-row justify-center items-center ">
+<section class="bgImage tabScren flex  flex-col-reverse  md:flex-row justify-center items-center ">
    <div class=" flex flex-col justify-end lg:pt-[200px] pb-10 md:justify-center  ">  
         <div class=" content z-30 font-bold text-blue-950 md:ml-8 ml-4 gap-y-4 md:gap-y-3 flex flex-col items-start ">
-          <p class="textBanner lg:text-4xl md:text-lg text-sm text-start">Comprehensive Network and Cyber Security Services to Safeguard Your Business</p>
-          <p class="textBanner lg:text-2xl md:text-lg text-start text-sm font-thin md:flex">Cutting-Edge Technology and Expertise to Secure Your Business from Modern Threats.</p> 
+          <p class="thicktext lg:text-4xl md:text-lg text-sm thincText text-start">Comprehensive Network and Cyber Security Services to Safeguard Your Business</p>
+          <p class="thicktext lg:text-xl md:text-lg text-start text-sm thicktext md:flex">Cutting-Edge Technology and Expertise to Secure Your Business from Modern Threats.</p> 
         
         </div>
         <div class="md:ml-8 ml-4 rounded-lg md:pt-3 pt-8 flex gap-x-4">
@@ -108,28 +111,36 @@
           <a class="waves-effect waves-light btn  cyan darken-1">Contact US</a>
         </div>            
     </div>
-    <img class="z-10  md:block md:w-[350px]  lg:w-[500px]" src="./assets/images/heropic.png" alt="">
+    <img class="z-10 animate-scale-up md:block md:w-[350px]  lg:w-[500px]" src="./assets/images/heropic.png" alt="">
   </section>     
 
-   <section class="Section3  h-fit flex flex-col items-center  text-center p-7">
+   <section class="  h-fit flex flex-col items-center text-center p-7">
 
-      <div id="Banner"></div>
-      <div id="whatWeDo"></div>
-      <!-- <section class="flex justify-between">
-
-        <div class="w-[500px] flex flex-col items-start justify-start font-bold">
+      <div id="Banner" class=""></div>
+      <!-- <section class="flex flex-col-reverse md:flex-row  Section3 h-[500px] pt-16 justify-between gap-10 text-blue-950">
+       
+        <div class="w-fit flex flex-col py-6 items-start justify-start font-bold">
           <p class="text-xl text-start">About US</p>
-          <p class="text-3xl  text-start">
-             Security for your digital products is just a click away with Techno Path.
-             </p>
-          <p class=" text-start">At Techno Path System, we are dedicated to providing top-notch network and cybersecurity solutions tailored to meet the unique needs of your business. With a team of experienced professionals and cutting-edge technology, we offer comprehensive protection for your data, network, databases, and cloud environments. Our commitment to excellence and innovation ensures that your digital assets are secure, allowing you to focus on what matters most—growing your business.</p>
+          <div class="py-10 flex justify-start">
+            <p class="text-3xl  text-start">
+              Security for your digital products is just a <span class="text-cyan-500  hover:text-blue-400 hover:cursor-pointer">click away</span>  with Techno Path.
+              </p>
+          </div>
+          <p class=" text-start thicktext">At Techno Path System, we are dedicated to providing top-notch network and cybersecurity solutions tailored to meet the unique needs of your business. With a team of experienced professionals and cutting-edge technology, we offer comprehensive protection for your data, network, databases, and cloud environments. Our commitment to excellence and innovation ensures that your digital assets are secure, allowing you to focus on what matters most—growing your business.</p>
 
         </div>
-        <div>
-            <img class="w-[400px]" src="./assets/images/people.png" alt="">
+        <div class="relative z-10 mr-10 py-6">
+            <img class="w-[800px] z-10 relative" src="./assets/images/people.png" alt="">
+            <div class="">
+                <img class="absolute  top-[-13px] left-[-34px] z-0" src="./assets/images/dot.png" alt="">
+                <img class="absolute top-[159px] left-[285px] z-0" src="./assets/images/dot.png" alt="">
+            </div>
         </div>
+
 
       </section> -->
+      <div id="whatWeDo"></div>
+
       <div id="WhyUs"></div>
    </section>
 
@@ -138,13 +149,8 @@
    <section>
      <!-- <div class="shadow  w-[200px] h-[150px]"></div> -->
 
-  </div>
+  
    </section>
-
-
-
-   
-
     <!-- My JS -->\
     <script src="./Components/Banner.js"></script>
    <script src="./Components/WhatWeDo.js"></script>
