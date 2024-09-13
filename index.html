@@ -4,26 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- materialize cdn -->
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/output.css" rel="stylesheet">
+    <!-- materialize cdn -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
-  
-<!-- font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&display=swap" rel="stylesheet">
-<link href="./css/style.css" rel="stylesheet">
-<link href="./css/output.css" rel="stylesheet">
+    
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&display=swap" rel="stylesheet">
 </head>
-<body class="thicktext">
+
+<body class="thinText">
   
-                                  <!-- LG Screen NavBar -->
+          <!-- LG Screen NavBar -->
      <section class="  shadow-lg">
          <div class="">
               <!-- Dropdown Structure -->
@@ -60,18 +60,24 @@
               </div>
           </ul>
         </div>  
-              <nav class=" bg-white h-10 md:h-12 navBargr shadow-green-600 flex items-center justify-between">
+              <nav class=" bg-white h-10 md:h-12  shadow-green-600 flex items-center justify-between">
                 <img class="w-[120px] pt-2 md:w-[150px] pl-3" src="./assets/images/logo.png" alt="Loading">
                 <div class="nav-wrapper  shadow-green-600 mx-3 ">
                     <!-- Sm Screen Side navBar -->
                 </div>
                 <a href="#" data-target="slide-out"  class="sidenav-trigger hide-on-med-and-up"><i class="material-icons text-black ">menu</i></a>
                 <ul class="hide-on-small-only gap-6 flex pr-3 ">
-                  <li class="navDark flex items-center ">
-                    <a href="sass.html" class="text-gray-600  relative text-[14px] hover:text-cyan-500 transform hover:scale-105 font-bold transition-all duration-300 ease-in-out">
-                      Home<span class="absolute  top-0 left-0 right-0 -z-10 border-b-2 border-cyan-400 rounded-md w-ull h-[53px]" ></span>
+                  <li class="navDark flex items-center">
+                    <a href="sass.html" class="text-gray-600 relative text-[14px] hover:text-cyan-500 transform hover:scale-105 font-bold transition-all duration-300 ease-in-out">
+                      Home
+                      <!-- Bottom Border Span -->
+                      <span class="absolute top-0 left-0 right-0 -z-10 border-b-2 border-cyan-400 rounded-md w-full h-[50px]"></span>
+                  
+                      <!-- Top Border Span -->
+                      <!-- <span class="absolute bottom-0 left-0 right-0 -z-10 border-t-2 border-cyan-400 rounded-md w-full h-[50px]"></span> -->
                     </a>
                   </li>
+                  
                   <li class="navDark flex items-center ">
                     <a class="dropdown-trigger text-gray-600 relative text-[14px] hover:text-cyan-500 transform hover:scale-105 font-bold transition-all duration-300 ease-in-out flex items-center" href="#!" data-target="dropdown1">
                       Product<span class="absolute  top-0 left-0 right-0 -z-10 border-b-2 border-cyan-400 rounded-md w-ull h-[53px]"></span>
@@ -99,11 +105,15 @@
               </nav>
          </div>
      </section>
-<section class="bgImage tabScren flex  flex-col-reverse  md:flex-row justify-center items-center ">
-   <div class=" flex flex-col justify-end lg:pt-[200px] pb-10 md:justify-center  ">  
-        <div class=" content z-30 font-bold text-blue-950 md:ml-8 ml-4 gap-y-4 md:gap-y-3 flex flex-col items-start ">
-          <p class="thicktext lg:text-4xl md:text-lg text-sm thincText text-start">Comprehensive Network and Cyber Security Services to Safeguard Your Business</p>
-          <p class="thicktext lg:text-xl md:text-lg text-start text-sm thicktext md:flex">Cutting-Edge Technology and Expertise to Secure Your Business from Modern Threats.</p> 
+<section class="bgImage tabScren flex  flex-col-reverse lg:pb-12 md:flex-row justify-center items-center ">
+  
+   <div class=" flex flex-col  justify-end lg:pt-[200px] pb-10 md:justify-center  ">  
+        <div class=" content z-30 font-bold text-blue-950  md:ml-8 ml-4 gap-y-4 md:gap-y-3 flex flex-col items-start ">
+          <!-- ------------------- -->
+          <!-- <div id="slider"></div> -->
+           
+          <p class="thinText lg:text-6xl md:text-3xl text-xl bolder text-start">Comprehensive Network and Cyber Security Services to <span>Safeguard Your Business</span> </p>
+          <p class="thinText lg:text-2xl md:text-xl text-start text-lg thinText md:flex">Cutting-Edge Technology and Expertise to Secure Your Business from Modern Threats.</p> 
         
         </div>
         <div class="md:ml-8 ml-4 rounded-lg md:pt-3 pt-8 flex gap-x-4">
@@ -111,61 +121,47 @@
           <a class="waves-effect waves-light btn  cyan darken-1">Contact US</a>
         </div>            
     </div>
-    <img class="z-10 animate-scale-up md:block md:w-[350px]  lg:w-[500px]" src="./assets/images/heropic.png" alt="">
+    <img id="LargePlusImg" class="z-10  animate-scale-up md:block md:w-[350px]  lg:w-[500px]" src="./assets/images/heropic.png" alt="">
   </section>     
 
    <section class="  h-fit flex flex-col items-center text-center p-7">
 
-      <div id="Banner" class=""></div>
-      <!-- <section class="flex flex-col-reverse md:flex-row  Section3 h-[500px] pt-16 justify-between gap-10 text-blue-950">
-       
-        <div class="w-fit flex flex-col py-6 items-start justify-start font-bold">
-          <p class="text-xl text-start">About US</p>
-          <div class="py-10 flex justify-start">
-            <p class="text-3xl  text-start">
-              Security for your digital products is just a <span class="text-cyan-500  hover:text-blue-400 hover:cursor-pointer">click away</span>  with Techno Path.
-              </p>
-          </div>
-          <p class=" text-start thicktext">At Techno Path System, we are dedicated to providing top-notch network and cybersecurity solutions tailored to meet the unique needs of your business. With a team of experienced professionals and cutting-edge technology, we offer comprehensive protection for your data, network, databases, and cloud environments. Our commitment to excellence and innovation ensures that your digital assets are secure, allowing you to focus on what matters most—growing your business.</p>
+      <div id="Banner"></div>
 
-        </div>
-        <div class="relative z-10 mr-10 py-6">
-            <img class="w-[800px] z-10 relative" src="./assets/images/people.png" alt="">
-            <div class="">
-                <img class="absolute  top-[-13px] left-[-34px] z-0" src="./assets/images/dot.png" alt="">
-                <img class="absolute top-[159px] left-[285px] z-0" src="./assets/images/dot.png" alt="">
-            </div>
-        </div>
+      <!-- <div id="imageDesignDot"></div> -->
 
-
-      </section> -->
+   </section>
       <div id="whatWeDo"></div>
-
       <div id="WhyUs"></div>
-   </section>
 
- 
+      <div id="happyClient"></div>
+   
 
-   <section>
-     <!-- <div class="shadow  w-[200px] h-[150px]"></div> -->
+ <!-- <div class="shadow  w-[200px] h-[150px]"></div> -->
 
-  
-   </section>
-    <!-- My JS -->\
-    <script src="./Components/Banner.js"></script>
-   <script src="./Components/WhatWeDo.js"></script>
-   <script src="./Components/WhyUs.js"></script>
-     <!-- Include jQuery for Materialize JS -->
-  
+    <!-- import  JS component -->
+    <script src="./Components/homePage/Slider.js"></script>
+    <script src="./Components/homePage/bannerBlur.js"></script>
+    <script src="./Components/homePage/Banner.js"></script>
+    <script src="./Components/homePage/Commitment.js"></script>
+    <script src="./Components/homePage/AboutUsHome.js"></script>
+    <script src="./Components/homePage/HappyClients.js"></script>
+    <script src="./Components/homePage/WhyUs.js"></script>
+
+ <!-- Include jQuery for Materialize JS --> 
+  <script src="./js/script.js"></script>    
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
  
-  <!-- JS script -->
-  <script src="./js/script.js"></script>
-
+  <!-- import library for animations & others -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
   <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+              <!-- gsap -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
   <script>
     tailwind.config = {
@@ -178,11 +174,7 @@
       }
     }
   </script>
-  <!-- gsap -->
-  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-  <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
         <script type="text/javascript">
           $('ul.main-menu li').click(function(e) {
                 e.preventDefault();
@@ -240,6 +232,7 @@
           });
 
     </script>
+  
     <script>
 
     </script>
