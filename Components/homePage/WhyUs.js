@@ -8,9 +8,9 @@ const WhyUs = () => {
 
 const WhyUsBar = () => {
   return `
-      <section class="pt-32">
+      <section class="md:mt-[170px] mt-[100px] pb-28">
         <div class="flex flex-col gap-y-9 items-center">
-              <p class="lg:text-3xl md:text-2xl text-xl bolder">Why Work with Techno Path</p> 
+              <p class="lg:text-3xl md:text-2xl text-xl bolder md:mb-[100px]">Why Work with Techno Path</p> 
               <div class="md:flex items-center lg:gap-x-32 ">
                 <img class="lg:w-[500px] w-[400px] pb-12" src="./assets/images/whyTechno.png" alt="Why Technology Image">
                 <div class="flex flex-col bolder text-xl pl-3 gap-y-7 items-start">

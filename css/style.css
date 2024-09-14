@@ -32,11 +32,31 @@
 
 
 @media (min-width: 1799px) {
+  .carousel .list .banner:nth-child(2) .introduce{
+    width: 30%;
+}
+
   #LargePlusImg {
     margin-top: 99px;
     padding-bottom: 40px;
     width: 790px;
   }
+  #listLg{
+    width: 1460px;
+    /* height: 300px; */
+  }
+  #largeCircle{
+
+    left:250px;
+  }
+  #arrowlg{
+    top: 792px ;
+    left: 390px;
+    top: 70%;
+}
+#intro{
+  width: 700px;
+}
 }
 
 body{overflow-x: hidden;}
@@ -93,11 +113,9 @@ body{overflow-x: hidden;}
 }
 
 .Banner .content {
-    position: relative; /* Ensure content sits above the background image */
-    z-index: 10; /* Ensure content is above the background */
-    color: white; /* Adjust text color if needed */
-    /* Center text if needed */
-     /* Add some padding if needed */
+    position: relative; 
+    z-index: 10; 
+    color: white; 
 }
 
 @media (max-width: 768px) {
@@ -211,13 +229,13 @@ a:hover {
 
 /* Handle (the part of the scrollbar that moves) */
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, #eaffff, #2fc6d7); 
-    border-radius: 10px; /* Rounded corners for a nicer look */
+    background: linear-gradient(to bottom, #eaffff, #65a5ac); 
+    border-radius: 20px; /* Rounded corners for a nicer look */
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #00ffff; /* Brighter color when hovered */
+    background: #69acacb7; /* Brighter color when hovered */
 }
 /* Scrollbar styles for WebKit browsers */
 ::-webkit-scrollbar {
@@ -231,13 +249,13 @@ a:hover {
 
 /* Handle (the part of the scrollbar that moves) */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #eaffff, #2fc6d7); /* Gradient background for the scrollbar thumb */
+  background: linear-gradient(to bottom, #eaffff, #1AAEA5); /* Gradient background for the scrollbar thumb */
   border-radius: 10px; /* Rounded corners for a nicer look */
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #00ffff; /* Brighter color when hovered */
+  background: #39bebe; /* Brighter color when hovered */
 }
 
 
@@ -284,7 +302,7 @@ span.next, span.prev{
   top: 50%;
   transform: translateY(-50%);
   padding: 14px;
-  color: #13c4e4;
+ 
   font-size: 24px;
   font-weight: bold;
   transition: 0.5s;
@@ -300,7 +318,6 @@ span.prev{
   left: 20px;
 }
 span.next:hover, span.prev:hover{
-  background-color: #0aff54;
   opacity: 0.8;
   color: #222;
 } 
@@ -449,13 +466,8 @@ span.next:hover, span.prev:hover{
 .item:hover img {
   transform: scale(1.2); /* Scale the image to 120% when hovered */
 }
-/* banner */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-body{
-    margin: 0;
-    background-color: #F4F4F4;
-    font-family: Poppins;
-}
+/* bannerBlur */
+
 :root{
     --banner1-transform: translateX(-100%) translateY(-5%) scale(1.5);
     --banner1-filter: blur(30px);
@@ -505,10 +517,11 @@ header nav a{
 /* carousel */
 .carousel{
     position: relative;
-    height: 600px;
+    height: 800px;
     overflow: hidden;
     margin-top: -50px;
 }
+
 .carousel .list{
     position: absolute;
     width: 1140px;
@@ -533,12 +546,12 @@ header nav a{
     transform: translateX(0);
 }
 .carousel .list .banner img{
-    width: 50%;
+    width: 40%;
     position: absolute;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    transition: right 1.5s;
+    transition: right 1s;
 }
 
 .carousel .list .banner .introduce{
@@ -548,11 +561,12 @@ header nav a{
 .carousel .list .banner:nth-child(2) .introduce{
     opacity: 1;
     pointer-events: auto;
-    width: 400px;
+    width: 430px;
+    padding-right: 30px;
     position: absolute;
     top: 50%;
     transform:  translateY(-50%);
-    transition: opacity 0.5s;
+    transition: opacity 0.1s;
 }
 .carousel .list .banner .introduce .title{
     font-size: 2em;
@@ -560,12 +574,12 @@ header nav a{
     line-height: 1em;
 }
 .carousel .list .banner .introduce .topic{
-    font-size: 4em;
+    font-size: 30px;
+    margin-bottom: 20px;
     font-weight: 500;
 }
 .carousel .list .banner .introduce .des{
-    font-size: small;
-    color: #5559;
+    color: rgba(0, 0, 0, 0.719);
 }
 .carousel .list .banner .introduce .seeMore{
     font-family: Poppins;
@@ -577,9 +591,6 @@ header nav a{
     font-weight: bold;
     letter-spacing: 3px;
     transition: background 0.5s;
-}
-.carousel .list .banner .introduce .seeMore:hover{
-    background: #eee;
 }
 .carousel .list .banner:nth-child(1){
     transform: var(--banner1-transform);
@@ -610,7 +621,7 @@ header nav a{
 .carousel .list .banner:nth-child(2) .introduce .des,
 .carousel .list .banner:nth-child(2) .introduce .seeMore{
     opacity: 0;
-    animation: showContent 0.5s 1s ease-in-out 1 forwards;
+    animation: showContent 0.5s 0.5s ease-in-out 1 forwards;
 }
 @keyframes showContent{
     from{
@@ -623,10 +634,10 @@ header nav a{
     }
 }
 .carousel .list .banner:nth-child(2) .introduce .topic{
-    animation-delay: 1.2s;
+    animation-delay: 0.7s;
 }
 .carousel .list .banner:nth-child(2) .introduce .des{
-    animation-delay: 1.4s;
+    animation-delay: 0.8s;
 }
 .carousel .list .banner:nth-child(2) .introduce .seeMore{
     animation-delay: 1.6s;
@@ -753,7 +764,7 @@ header nav a{
     font-weight: 500;
 }
 .carousel.carousel.showDetail .list .banner:nth-child(2) .checkout button:nth-child(2){
-    background-color: #58dbdb;
+    background-color: #d2db58;
     color: #eee;
 }
 .carousel.showDetail .list .banner:nth-child(2) .detail  .title,
@@ -775,20 +786,18 @@ header nav a{
 .arrows{
     position: absolute;
     bottom: 10px;
-    width: 1140px;
-    max-width: 90%;
+    width: 50px;
+    max-width: 50%;
     display: flex;
     justify-content: space-between;
-    left: 50%;
+    gap: 30px;
+    top:79% ;
+    left: 70px;
     transform: translateX(-50%);
 }
-#prev,
+ #prev,
 #next{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
     font-family: monospace;
-    border: 1px solid #5555;
     font-size: large;
     bottom: 20%;
     left: 10%;
@@ -796,23 +805,8 @@ header nav a{
 #next{
     left: unset;
     right: 10%;
-}
-#back{
-    position: absolute;
-    z-index: 100;
-    bottom: 0%;
-    left: 50%;
-    transform: translateX(-50%);
-    border: none;
-    border-bottom: 1px solid #555;
-    font-family: Poppins;
-    font-weight: bold;
-    letter-spacing: 3px;
-    background-color: transparent;
-    padding: 10px;
-    /* opacity: 0; */
-    transition: opacity 0.5s;
-}
+} 
+
 .carousel.showDetail #back{
     opacity: 1;
 }
@@ -822,13 +816,14 @@ header nav a{
     pointer-events: none;
 }
 .carousel::before{
-    width: 500px;
-    height: 300px;
+    width: 100px;
+    height: 200px;
     content: '';
-    background-image: linear-gradient(70deg, #2adc6e, rgb(90, 238, 248));
+    /* background-image: url(../assets/images/circlefill.png); */
+
     position: absolute;
     z-index: -1;
-    border-radius: 20% 30% 80% 10%;
+    border-radius: 80% 30% 80% 10%;
     filter: blur(150px);
     top: 50%;
     left: 50%;
@@ -840,6 +835,11 @@ header nav a{
     filter: blur(130px);
 }
 @media screen and (max-width: 991px){
+  .arrows{
+    top:79% ;
+    left: 50px;
+    top: 70%;
+}
     .carousel{
         height: 600px;
     }
@@ -854,8 +854,20 @@ header nav a{
         font-size: 2em;
     }
 }
+@media screen and (min-width: 1799px){
+  .carousel .list .banner:nth-child(2) .introduce{
+    width: 60%;
+}
+
+}
+
 @media screen and (max-width: 767px){
     /* mobile */
+    .arrows{
+      top:79% ;
+      left: -5px;
+      
+  }
     .carousel{
         height: 500px;
     }
@@ -863,16 +875,18 @@ header nav a{
         width: 100%;
         font-size: 10px;
     }
-    
+
     .carousel .list{
         height: 100%;
     }
     .carousel .list .banner:nth-child(2) .introduce{
-        width: 50%;
+        width: 70%;
     }
-    
+    .carousel .list .banner:nth-child(2) .introduce{
+      width: 75%;
+  }
     .carousel .list .banner img{
-        width: 40%;
+        width: 30%;
     }
     .carousel.showDetail .list .banner:nth-child(2) .detail{
         backdrop-filter: blur(10px);
@@ -888,4 +902,7 @@ header nav a{
         width: max-content;
         float: right;
     }
+}
+.footer{
+  background-color: #1AAEA5;
 }
