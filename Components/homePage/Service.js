@@ -51,14 +51,18 @@ const ourServiceBar = () => {
         </div>
     </div>
 
-    <div class="flex gap-40 lg:mt-10">
-        <button class="flex justify-center  items-center cursor-pointer rounded-3xl bg-cyan-200 bg-opacity-25 w-32">
-            <img id="prev" class="w-12" src="./assets/images/chevrons-left.svg" alt="Previous" />
-        </button>
-        <button class="flex justify-center items-center cursor-pointer rounded-3xl bg-cyan-200 bg-opacity-25 w-32">
-            <img id="next" class="w-12" src="./assets/images/chevrons-right.svg" alt="Next" />
-        </button>
-    </div>
+<div class="flex gap-40 lg:mt-10">
+  <!-- Previous Button -->
+  <div id="prev" class="flex justify-center items-center cursor-pointer rounded-3xl bg-cyan-200 hover:bg-green-200 bg-opacity-25 w-32 transform transition-transform duration-300 ease-in-out hover:scale-110 active:scale-95">
+    <img  class="w-12" src="./assets/images/chevrons-left.svg" alt="Previous" />
+  </div>
+
+  <!-- Next Button -->
+  <div id="next" class="flex justify-center items-center cursor-pointer rounded-3xl bg-cyan-200 hover:bg-green-200 bg-opacity-25 w-32 transform transition-transform duration-300 ease-in-out hover:scale-110 active:scale-95">
+    <img  class="w-12" src="./assets/images/chevrons-right.svg" alt="Next" />
+  </div>
+</div>
+
 </section>
 
     `;

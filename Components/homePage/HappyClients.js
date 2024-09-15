@@ -8,7 +8,7 @@ const happyClient = () => {
 
 const happyClientBar = () => {
   return `
-<section class="lg:mt-[60px] mt-[50px]">
+<section class="lg:mt-[60px] mt-[50px] ">
     <div class="flex flex-col items-center justify-center p-14">
      <img class="w-52" src="./assets/images/handshake.png" alt="">
      <p class="lg:text-3xl md:text-2xl text-xl bolder mb-[50px]">Our Happy Clients</p>
