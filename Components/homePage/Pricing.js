@@ -76,8 +76,8 @@ const PricingBar = () => {
               <p>Cloud Security: Advanced cloud protection and threat detection</p>
             </div>
           </div>
-          <div class="bg-white flex items-center justify-center teal-text lighten-2 w-28 h-8 transform transition-transform duration-200 hover:scale-110 active:scale-100">
-            <button class="">Get Started</button>
+          <div class="bg-white hover:cursor-pointer flex items-center justify-center teal-text lighten-2 w-28 h-8 transform transition-transform duration-200 hover:scale-110 active:scale-100">
+            <p  class="">Get Started</p>
           </div>
         </div>
       

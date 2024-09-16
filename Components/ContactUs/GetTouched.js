@@ -9,7 +9,7 @@ const getouched = () => {
 const getouchedBar = () => {
   return `
    <section>
-    <div class="pt-6">
+    <div class="lg:pt-6">
         <div class="contact">
             <main class="row">
                 

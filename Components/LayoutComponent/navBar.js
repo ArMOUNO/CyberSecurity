@@ -46,13 +46,13 @@ const navbarBar = () => {
              </div>
          </ul>
        </div>  
-             <nav class=" bg-white h-10 md:h-12  shadow-green-600 flex items-center justify-between">
+             <nav class=" bg-white h-10 md:h-12   flex items-center justify-between">
                <img class="w-[120px] pt-2 md:w-[150px] pl-3" src="../../assets/images/logo.png" alt="Loading">
                <div class="nav-wrapper  shadow-green-600 mx-3 ">
-                   <!-- Sm Screen Side navBar -->
+
                </div>
                <a href="#" data-target="slide-out"  class="sidenav-trigger hide-on-med-and-up"><i class="material-icons text-black ">menu</i></a>
-<ul class="hide-on-small-only gap-6 flex pr-3">
+<ul class="hide-on-small-only md:gap-4 lg:gap-6 flex pr-3">
  <!-- Home Menu Item -->
  <li class="navDark flex items-center">
    <a href="../../index.html" class="relative text-gray-600 text-[14px] hover:text-green-500 transform hover:scale-105 font-bold transition-all duration-300 ease-in-out group">
