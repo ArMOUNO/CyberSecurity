@@ -10,17 +10,23 @@ const PricingBar = () => {
   return `
 <section class="pb-5 md:px-7 flex flex-col items-center">
       <div class="flex flex-col gap-y-4 md:flex-row justify-between px-6">
-        <div class="flex flex-col md:pb-6 md:w-[600px]">
-          <p class="text-lg bolder pb-3">Our Pricing</p>
-          <p class="text-3xl bolder md:pb-9">suitable price for you</p>
-        </div>
-         <div class="md:w-[500px] pb-9 w-fit">
-           <p>We offer competitive pricing tailored to fit your business needs and budget. Our transparent pricing model ensures you receive the best value for high-quality cybersecurity services, without any hidden costs.</p>
-         </div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+  <!-- First Column (Text Section) -->
+  <div class="flex flex-col md:pb-6 ">
+    <p class="text-lg bolder pb-3">Our Pricing</p>
+    <p class="text-3xl bolder md:pb-9">suitable price for you</p>
+  </div>
+
+  <!-- Second Column (Description Section) -->
+  <div class="md:w-[360px] pb-9 w-fit">
+    <p>We offer competitive pricing tailored to fit your business needs and budget. Our transparent pricing model ensures you receive the best value for high-quality cybersecurity services, without any hidden costs.</p>
+  </div>
+</div>
+
       </div>
-      <div class="grid gap-10 justify-center  items-start sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div class="grid gap-10 justify-center px-4 items-start grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <!-- First Column (Basic) -->
-        <div class="shadow flex flex-col justify-center items-center gap-y-10 w-[360px] h-[400px]">
+        <div class="shadow h-[400px] flex flex-col justify-center items-center gap-y-10 ">
           <div class="flex flex-col justify-center pl-3 items-start">
             <p class="bolder">Basic</p>
             <p class="text-2xl bolder">৳ 115,99/<span class="teal-text lighten-2 text-sm">Service</span></p>
@@ -47,13 +53,13 @@ const PricingBar = () => {
               <p>Support: Email support during business hours</p>
             </div>
           </div>
-          <div class="teal lighten-2 flex items-center justify-center text-white w-28 h-8 transform transition-transform duration-200 hover:scale-110 active:scale-100">
+          <div class="teal lighten-2 flex my-3 items-center justify-center text-white w-28 h-8 transform transition-transform duration-200 hover:scale-110 active:scale-100">
             <button class="">Get Started</button>
           </div>
         </div>
       
         <!-- Second Column (Best Value) -->
-        <div class="rounded-xl text-white teal lighten-2 flex flex-col justify-center items-center gap-y-10 w-[360px] h-[400px]">
+        <div class="rounded-xl h-[400px] text-white teal lighten-2 flex flex-col justify-center items-center gap-y-10 ">
           <div class="flex flex-col justify-center pl-3 items-start">
             <p class="bolder">Best Value</p>
             <p class="text-2xl bolder">৳ 200,99/<span class=" text-sm">Service</span></p>
@@ -76,13 +82,13 @@ const PricingBar = () => {
               <p>Cloud Security: Advanced cloud protection and threat detection</p>
             </div>
           </div>
-          <div class="bg-white hover:cursor-pointer flex items-center justify-center teal-text lighten-2 w-28 h-8 transform transition-transform duration-200 hover:scale-110 active:scale-100">
+          <div class="bg-white my-3 hover:cursor-pointer flex items-center justify-center teal-text lighten-2 w-28 h-8 transform transition-transform duration-200 hover:scale-110 active:scale-100">
             <p  class="">Get Started</p>
           </div>
         </div>
       
         <!-- Third Column (Premium) with Col Span on Small Screens -->
-        <div class="shadow flex flex-col justify-center items-center gap-y-4 w-[360px] h-[400px] lg:col-span-1 md:col-span-2 sm:col-span-1">
+        <div class="shadow h-[400px] flex flex-col justify-center items-center gap-y-4  lg:col-span-1 md:col-span-2 col-span-1">
           <div class="flex flex-col justify-center pl-3 items-start">
             <p class="bolder">Premium</p>
             <p class="text-2xl bolder">৳ 200,99/<span class="teal-text lighten-2 text-sm">Service</span></p>
@@ -105,7 +111,7 @@ const PricingBar = () => {
               <p>Cloud Security: Full-spectrum cloud security, including advanced threat intelligence and automated responses</p>
             </div>
           </div>
-          <div class="teal lighten-2 flex items-center justify-center text-white w-28 h-8 transform transition-transform duration-200 hover:scale-110 active:scale-100">
+          <div class="teal lighten-2 lg:mt-0 md:mt-4 lg:my-3 flex items-center justify-center text-white w-28 h-8 transform transition-transform duration-200 hover:scale-110 active:scale-100">
             <button class="">Get Started</button>
           </div>
         </div>

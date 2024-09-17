@@ -16,8 +16,9 @@ const BannerBar = () => {
      <!-- ------------------- -->
      <!-- <div id="slider"></div> -->
       
-     <p class="thinText lg:text-6xl md:text-2xl text-xl bolder text-start">Comprehensive Network and Cyber Security Services to <span>Safeguard Your Business</span> </p>
-     <p class="thinText lg:text-2xl md:text-2xl text-start text-lg thinText md:flex">Cutting-Edge Technology and Expertise to Secure Your Business from Modern Threats.</p> 
+    <p id="" class="thinText lg:text-6xl md:text-2xl text-xl bolder text-start">Comprehensive Network and Cyber Security Services to <span>Safeguard Your Business</span></p>
+    <p id="" class="thinText lg:text-2xl md:text-2xl text-start text-lg thinText md:flex">Cutting-Edge Technology and Expertise to Secure Your Business from Modern Threats.</p>
+
    
    </div>
    <div class="md:ml-8 ml-4 rounded-lg md:pt-3 pt-8 flex gap-x-4">

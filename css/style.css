@@ -122,6 +122,7 @@ body{overflow-x: hidden;}
     .Banner {
         height: 300px; /* Adjust height for smaller screens */
     }
+
 }
 
 .thinText{
@@ -151,6 +152,7 @@ body{overflow-x: hidden;}
     .sidenav {
       display: block; /* Ensure sidenav is displayed on small screens */
     }
+    
   }
   
   /* Hide sidenav on larger screens */
@@ -942,11 +944,9 @@ hr {
 
 .contact{
 	width: 100%;
-	min-height: 100vh;
+  padding: 10px;
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	padding: 30px 8%;
 }
 .contact .row{
 	display: flex;
@@ -1067,26 +1067,16 @@ section.left .socialMedia{
 
 /* Code for the right section (column) */
 
-.row section.right .messageForm{
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	padding-top: 30px;
-}
+
 .row section.right .inputGroup{
 	margin: 18px 0px;
 	position: relative;
 }
-.messageForm .halfWidth{
-	flex-basis: 48%;
-}
-.messageForm .fullWidth{
-	flex-basis: 100%;
-}
+
 .messageForm input, .messageForm textarea{
 	width: 100%;
 	font-size: 18px;
-	padding: 2px px;
+	padding: 5px 8px;
 	color: #070707;
 	border: none;
 	border-bottom: 2px solid #666;
@@ -1094,7 +1084,6 @@ section.left .socialMedia{
 }
 .messageForm textarea{
 	resize: none;
-	/* height: 220px; */
 	display: block;
 }
 textarea::-webkit-scrollbar{
@@ -1118,6 +1107,12 @@ textarea::-webkit-scrollbar-thumb{
 	transition: 0.4s;
 	pointer-events: none;
 }
+@media (max-width: 768px) {
+  .inputGroup label {
+    font-size: 13px;
+  }
+
+}
 .inputGroup:nth-child(4) label{
 	top: 2px;
 }
@@ -1127,9 +1122,10 @@ textarea::-webkit-scrollbar-thumb{
 	transform: translateY(-30px);
 	font-size: 16px;
 }
+
 .inputGroup button{
 	padding: 8px 16px;
-	font-size: 18px;
+	font-size: 14px;
 	background-color: rgba(9, 139, 115, 0.913);
 	color: #ddd;
 	border: 1px solid transparent;
@@ -1139,6 +1135,29 @@ textarea::-webkit-scrollbar-thumb{
 	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
 	transition: 0.4s;
 }
+/* Chrome, Safari, and other WebKit browsers */
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  background-color: #fff !important; /* Your desired background color */
+  color: #000 !important; /* Your desired text color */
+  box-shadow: 0 0 0 1000px white inset !important; /* Ensures the background change stays consistent */
+  -webkit-text-fill-color: #000 !important; /* Text color inside autofilled input */
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Override for Firefox */
+input:-moz-autofill,
+textarea:-moz-autofill {
+  background-color: transparent !important;
+  color: #000 !important;
+}
+input:focus,
+textarea:focus {
+  background-color: transparent;
+  border-color: dodgerblue;
+  outline: none;
+}
+
 .inputGroup button:hover{
 	background-color: #2e2e2e;
 	color: rgb(46, 242, 245);
@@ -1158,4 +1177,18 @@ textarea::-webkit-scrollbar-thumb{
 		flex-basis: 100%;
 		margin: 0px;
 	}
+}
+#circled {
+  animation: zoomInOut 3s infinite ease-in-out;
+  display: inline-block; /* Optional depending on the element */
+}
+
+@keyframes zoomInOut {
+
+  10% {
+    transform: scale(0.8); /* Default size */
+  }
+  100% {
+    transform: scale(1em); /* Zoom out */
+  }
 }

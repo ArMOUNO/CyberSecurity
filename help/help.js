@@ -14,3 +14,10 @@ const happyClientBar = () => {
 };
 
 happyClient();
+
+
+
+<div class="inputGroup fullWidth">
+<input type="text" name="" id="name" required="required">
+<label>Subject</label>
+</div>

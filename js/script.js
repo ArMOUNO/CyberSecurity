@@ -158,3 +158,32 @@ seeMoreButtons.forEach((button) => {
 backButton.onclick = function(){
     carousel.classList.remove('showDetail');
 }
+
+function sendMail(event) {
+  // Prevent form from submitting traditionally
+  event.preventDefault();
+
+  var params = {
+    username: document.getElementById("username").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  };
+  console.log(params);
+
+  const serviceID = "service_drlr516";
+  const templateID = "template_1thzj6v";
+
+  emailjs.send(serviceID, templateID, params, 'oY5H8x1VVgScSv25b')
+    .then(res => {
+      document.getElementById("username").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("message").value = "";
+      console.log(res);
+      alert("Your message sent successfully!!");
+    })
+    .catch(err => {
+      console.error('Failed to send email:', err);
+    });
+}
+
+///
