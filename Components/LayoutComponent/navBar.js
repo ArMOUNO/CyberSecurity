@@ -58,46 +58,46 @@ const navbar = () => {
                 <!-- Home Menu Item -->
                 <li class="navDark flex items-center">
                   <a href="../../index.html"
-                    class="relative text-gray-600 text-[14px] hover:text-green-500 transform hover:scale-105 font-bold transition-all duration-300 ease-in-out group">
+                    class="relative text-gray-600 text-[14px] hover:text-cyan-700 transform hover:scale-105 font-bold transition-all duration-300 ease-in-out group">
                     Home
                     <!-- Bottom Border Span -->
                     <span
-                      class="absolute bottom-[13px] h-[50px] left-0 right-0 -z-10 border-b-2 border-green-500 rounded-md w-full scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"></span>
+                      class="absolute bottom-[13px] h-[50px] left-0 right-0 -z-10 border-b-2  rounded-md w-full scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"></span>
                   </a>
                 </li>
       
                 <!-- Product Menu Item -->
                 <li class="navDark flex items-center">
-                  <a class="dropdown-trigger relative text-gray-600 text-[14px] hover:text-green-500 transform hover:scale-105 font-bold transition-all duration-300 ease-in-out flex items-center group"
+                  <a class="dropdown-trigger relative text-gray-600 text-[14px] hover:text-cyan-700 transform hover:scale-105 font-bold transition-all duration-300 ease-in-out flex items-center group"
                     href="#!" data-target="dropdown1">
                     Product
                     <!-- Bottom Border Span -->
                     <span
-                      class="absolute bottom-[13px] h-[50px] left-0 right-0 -z-10 border-b-2 border-green-600 rounded-md w-full scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"></span>
+                      class="absolute bottom-[13px] h-[50px] left-0 right-0 -z-10 border-b-2  rounded-md w-full scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"></span>
                     <i class="material-icons right ml-2">arrow_drop_down</i>
                   </a>
                 </li>
       
                 <!-- Service Menu Item -->
                 <li class="navDark flex items-center">
-                  <a class="dropdown-trigger relative text-gray-600 text-[14px] hover:text-green-500 transform hover:scale-105 font-bold transition-all duration-300 ease-in-out flex items-center group"
+                  <a class="dropdown-trigger relative text-gray-600 text-[14px] hover:text-cyan-700 transform hover:scale-105 font-bold transition-all duration-300 ease-in-out flex items-center group"
                     href="#!" data-target="dropdown2">
                     Service
                     <!-- Bottom Border Span -->
                     <span
-                      class="absolute bottom-[13px] h-[50px] left-0 right-0 -z-10 border-b-2 border-green-600 rounded-md w-full scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"></span>
+                      class="absolute bottom-[13px] h-[50px] left-0 right-0 -z-10 border-b-2  rounded-md w-full scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"></span>
                     <i class="material-icons right ml-2">arrow_drop_down</i>
                   </a>
                 </li>
       
                 <!-- About Menu Item -->
                 <li class="navDark flex items-center">
-                  <a class=" text-gray-600 text-[14px] hover:text-green-500 transform hover:scale-105 font-bold transition-all duration-300 ease-in-out flex items-center group"
+                  <a class=" text-gray-600 text-[14px] hover:text-cyan-700 transform hover:scale-105 font-bold transition-all duration-300 ease-in-out flex items-center group"
                     href="../../Pages/aboutUS.html">
                     About
                     <!-- Bottom Border Span -->
                     <span
-                      class="absolute bottom-[13px] h-[50px] left-0 right-0 -z-10 border-b-2 border-green-600 rounded-md w-full scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"></span>
+                      class="absolute bottom-[13px] h-[50px] left-0 right-0 -z-10 border-b-2  rounded-md w-full scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"></span>
       
                   </a>
                 </li>
@@ -105,11 +105,11 @@ const navbar = () => {
                 <!-- Contact Menu Item -->
                 <li class="navDark flex items-center">
                   <a href="../../Pages/ContactUs.html"
-                    class="relative text-gray-600 text-[14px] hover:text-green-500 transform hover:scale-105 font-bold transition-all duration-300 ease-in-out group">
+                    class="relative text-gray-600 text-[14px] hover:text-cyan-700 transform hover:scale-105 font-bold transition-all duration-300 ease-in-out group">
                     Contact
                     <!-- Bottom Border Span -->
                     <span
-                      class="absolute bottom-[13px] h-[50px] left-0 right-0 -z-10 border-b-2 border-green-600 rounded-md w-full scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"></span>
+                      class="absolute bottom-[13px] h-[50px] left-0 right-0 -z-10 border-b-2  rounded-md w-full scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"></span>
                   </a>
                 </li>
               </ul>
@@ -138,7 +138,7 @@ const navbar = () => {
                 <div class="">
                  
                 <div class=" ">
-                  <ul class="">
+                  <ul class=" ">
                     <li class="">
                       <a href="../index.html">Home</a>
                     </li>

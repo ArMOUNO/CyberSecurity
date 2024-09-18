@@ -31,6 +31,16 @@
 } */
 
 
+
+/* Change color on hover */
+.navDark a:hover {
+  color: #09ac8f; /* Tailwind's text-cyan-700 */
+  transform: scale(1.05); /* Tailwind's hover:scale-105 */
+}
+.navDark a span {
+  border-color: #09ac8f;
+}
+
 @media (min-width: 1799px) {
   .carousel .list .banner:nth-child(2) .introduce{
     width: 30%;
@@ -1216,18 +1226,23 @@ swiper-container {
   width: 60%;
   height: 100%;
 }
+@media (max-width: 768px) {
+  swiper-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+  }
+  
 
+}
 swiper-slide {
+  padding-top: 30px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+
 /* Basic dropdown styles */
