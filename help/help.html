@@ -1,120 +1,182 @@
-
-const Pricing = () => {
-    const PricingContent = document.getElementById("Pricing");
-    PricingContent.innerHTML = PricingBar();
+const navbar = () => {
+const navbarContent = document.getElementById("navbar");
+navbarContent.innerHTML = navbarBar();
 };
 
-// const img = '../assets/logo.png';   
+// const img = '../assets/logo.png';
 
-const PricingBar = () => {
-  return `
-<section class="pb-5 md:px-7 flex flex-col items-center">
-      <!-- <div class="flex flex-col gap-y-4 md:flex-row justify-between  px-6">
-        <div class="flex flex-col md:pb-6 w-[100px]">
-          <p class="text-lg bolder pb-3">Our Pricing</p>
-          <p class="text-3xl bolder md:pb-9">suitable price for you</p>
+const navbarBar = () => {
+return `
+
+<section>
+  <section class="  shadow-lg">
+    <div class="">
+      <!-- Dropdown Structure -->
+      <div class="dropdown ">
+
+        <ul id="dropdown1" class="dropdown-content">
+          <div class="">
+            <li><a href="#!">Cisco</a></li>
+            <li><a href="#!">Fortinet</a></li>
+            <li><a href="#!">Sophos</a></li>
+            <li><a href="#!">MicroSoft</a></li>
+
+            <li><a href="#!">Arcon</a></li>
+            <li><a href="#!">Dell</a></li>
+            <li><a href="#!">NetApp</a></li>
+          </div>
+        </ul>
+        <ul id="dropdown2" class="dropdown-content">
+          <div>
+            <li><a href="#!">NetWork and Security</a></li>
+            <li><a href="#!">Cyber Security</a></li>
+            <li><a href="#!">Cloud Security</a></li>
+            <li><a href="#!">Cloud Service</a></li>
+            <!-- <li class="divider">IOT</li> -->
+            <li><a href="#!">Maintenance Service</a></li>
+          </div>
+        </ul>
+        <ul id="dropdown3" class="dropdown-content">
+          <div>
+            <li><a href="#!">About</a></li>
+            <li><a href="#!">About</a></li>
+            <li><a href="#!">About</a></li>
+            <li><a href="#!">About</a></li>
+            <!-- <li class="divider"></li> -->
+            <li><a href="#!">bbbb</a></li>
+          </div>
+        </ul>
+      </div>
+      <nav class=" bg-white h-10 md:h-12   flex items-center justify-between">
+        <img class="w-[120px] pt-2 md:w-[150px] pl-3" src="../../assets/images/logo.png" alt="Loading">
+        <div class="nav-wrapper  shadow-green-600 mx-3 ">
+
         </div>
-         <div class="md:w-[300px] pb-9 w-fit">
-           <p>We offer competitive pricing tailored to fit your business needs and budget. Our transparent pricing model ensures you receive the best value for high-quality cybersecurity services, without any hidden costs.</p>
-         </div>
-      </div> -->
-      <div class="grid gap-10 justify-center  items-start sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        <!-- First Column (Basic) -->
-        <div class="shadow flex flex-col justify-center items-center gap-y-10 w-[360px] h-[400px]">
-          <div class="flex flex-col justify-center pl-3 items-start">
-            <p class="bolder">Basic</p>
-            <p class="text-2xl bolder">৳ 115,99/<span class="teal-text lighten-2 text-sm">Service</span></p>
+        <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-med-and-up"><i
+            class="material-icons text-black ">menu</i></a>
+        <ul class="hide-on-small-only md:gap-4 lg:gap-6 flex pr-3">
+          <!-- Home Menu Item -->
+          <li class="navDark flex items-center">
+            <a href="../../index.html"
+              class="relative text-gray-600 text-[14px] hover:text-green-500 transform hover:scale-105 font-bold transition-all duration-300 ease-in-out group">
+              Home
+              <!-- Bottom Border Span -->
+              <span
+                class="absolute bottom-[13px] h-[50px] left-0 right-0 -z-10 border-b-2 border-green-500 rounded-md w-full scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"></span>
+            </a>
+          </li>
+
+          <!-- Product Menu Item -->
+          <li class="navDark flex items-center">
+            <a class="dropdown-trigger relative text-gray-600 text-[14px] hover:text-green-500 transform hover:scale-105 font-bold transition-all duration-300 ease-in-out flex items-center group"
+              href="#!" data-target="dropdown1">
+              Product
+              <!-- Bottom Border Span -->
+              <span
+                class="absolute bottom-[13px] h-[50px] left-0 right-0 -z-10 border-b-2 border-green-600 rounded-md w-full scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"></span>
+              <i class="material-icons right ml-2">arrow_drop_down</i>
+            </a>
+          </li>
+
+          <!-- Service Menu Item -->
+          <li class="navDark flex items-center">
+            <a class="dropdown-trigger relative text-gray-600 text-[14px] hover:text-green-500 transform hover:scale-105 font-bold transition-all duration-300 ease-in-out flex items-center group"
+              href="#!" data-target="dropdown2">
+              Service
+              <!-- Bottom Border Span -->
+              <span
+                class="absolute bottom-[13px] h-[50px] left-0 right-0 -z-10 border-b-2 border-green-600 rounded-md w-full scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"></span>
+              <i class="material-icons right ml-2">arrow_drop_down</i>
+            </a>
+          </li>
+
+          <!-- About Menu Item -->
+          <li class="navDark flex items-center">
+            <a class=" text-gray-600 text-[14px] hover:text-green-500 transform hover:scale-105 font-bold transition-all duration-300 ease-in-out flex items-center group"
+              href="../../Pages/aboutUS.html">
+              About
+              <!-- Bottom Border Span -->
+              <span
+                class="absolute bottom-[13px] h-[50px] left-0 right-0 -z-10 border-b-2 border-green-600 rounded-md w-full scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"></span>
+
+            </a>
+          </li>
+
+          <!-- Contact Menu Item -->
+          <li class="navDark flex items-center">
+            <a href="../../Pages/ContactUs.html"
+              class="relative text-gray-600 text-[14px] hover:text-green-500 transform hover:scale-105 font-bold transition-all duration-300 ease-in-out group">
+              Contact
+              <!-- Bottom Border Span -->
+              <span
+                class="absolute bottom-[13px] h-[50px] left-0 right-0 -z-10 border-b-2 border-green-600 rounded-md w-full scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+  <section class="">
+    <div id="slide-out" class="sidenav  rounded-md h-[700px] ">
+      <div class="user-view relative">
+        <div class="background">
+          <img src="../../assets/images/Cyber.jpg">
+        </div>
+
+        <a href="#" class="sidenav-close ">
+          <p class="absolute left-14 top-2  w-8 h-8 bg-opacity-55 flex items-center rounded-full bg-blue-950"><i
+              class="material-icons opacity-100 text-white  transform transition-transform duration-300 hover:scale-125 active:scale-90">navigate_before</i>
+          </p>
+        </a>
+
+        <a href="#user"><img class="w-32 h-32  rounded-full" src="./assets/images/Techno Path.png"></a>
+        <a href="#name"><span class="white-text name">From Networks to Cybersecurity Mastery</span></a>
+        <!-- <a href="#email"><span class="white-text email">jGuardians of the Grid</span></a> -->
+      </div>
+      <div class="wrapper text-black">
+        <div class="hero-section">
+          <div class="menu-btn">
+           
+          <div class=" pl-10">
+            <ul class="">
+              <li class="">
+                <a href="../index.html">Home</a>
+              </li>
+              <li class="">
+                <div class="dropdown">
+                  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                  </div>
+                </div>
+              </li>
+              <li class="">
+                <a href="../index.html">Service</a>
+              </li>
+              <li class="">
+                <a href="../Pages/aboutUS.html">About</a>
+              </li>
+              <li class="">
+                <a href="../Pages/ContactUs.html">Contact</a>
+              </li>
+            </ul>
+             
           </div>
-          <div class="flex flex-col items-start gap-y-5 py-3">
-            <div class="flex justify-center items-center">
-              <i class="material-icons teal-text lighten-2">play_arrow</i>
-              <p>Network Security: Basic firewall protection</p>
-            </div>
-            <div class="flex justify-center items-center">
-              <i class="material-icons teal-text lighten-2">play_arrow</i>
-              <p>Data Security: Standard encryption</p>
-            </div>
-            <div class="flex justify-center items-center">
-              <i class="material-icons teal-text lighten-2">play_arrow</i>
-              <p>Database Security: Basic access controls</p>
-            </div>
-            <div class="flex justify-center items-center">
-              <i class="material-icons teal-text lighten-2">play_arrow</i>
-              <p>Cloud Security: Essential cloud monitoring</p>
-            </div>
-            <div class="flex justify-center items-center">
-              <i class="material-icons teal-text lighten-2">play_arrow</i>
-              <p>Support: Email support during business hours</p>
-            </div>
-          </div>
-          <div class="teal lighten-2 flex items-center justify-center text-white w-28 h-8 transform transition-transform duration-200 hover:scale-110 active:scale-100">
-            <button class="">Get Started</button>
           </div>
         </div>
-      
-        <!-- Second Column (Best Value) -->
-        <div class="rounded-xl text-white teal lighten-2 flex flex-col justify-center items-center gap-y-10 w-[360px] h-[400px]">
-          <div class="flex flex-col justify-center pl-3 items-start">
-            <p class="bolder">Best Value</p>
-            <p class="text-2xl bolder">৳ 200,99/<span class=" text-sm">Service</span></p>
-          </div>
-          <div class="flex flex-col items-start gap-2 py-3">
-            <div class="flex justify-center items-center">
-              <i class="material-icons white-text">play_arrow</i>
-              <p>Network Security: Advanced firewall and intrusion detection</p>
-            </div>
-            <div class="flex justify-center items-center">
-              <i class="material-icons white-text">play_arrow</i>
-              <p>Data Security: Enhanced encryption and regular backups</p>
-            </div>
-            <div class="flex justify-center items-center">
-              <i class="material-icons white-text">play_arrow</i>
-              <p>Database Security: Comprehensive access management and regular scans</p>
-            </div>
-            <div class="flex justify-center items-center">
-              <i class="material-icons white-text">play_arrow</i>
-              <p>Cloud Security: Advanced cloud protection and threat detection</p>
-            </div>
-          </div>
-          <div class="bg-white hover:cursor-pointer flex items-center justify-center teal-text lighten-2 w-28 h-8 transform transition-transform duration-200 hover:scale-110 active:scale-100">
-            <p  class="">Get Started</p>
-          </div>
-        </div>
-      
-        <!-- Third Column (Premium) with Col Span on Small Screens -->
-        <div class="shadow flex flex-col justify-center items-center gap-y-4 w-[360px] h-[400px] lg:col-span-1 md:col-span-2 sm:col-span-1">
-          <div class="flex flex-col justify-center pl-3 items-start">
-            <p class="bolder">Premium</p>
-            <p class="text-2xl bolder">৳ 200,99/<span class="teal-text lighten-2 text-sm">Service</span></p>
-          </div>
-          <div class="flex flex-col gap-2 items-start py-3">
-            <div class="flex justify-center items-center">
-              <i class="material-icons teal-text lighten-2">play_arrow</i>
-              <p>Network Security: Enterprise-grade firewall, intrusion prevention, and network segmentation</p>
-            </div>
-            <div class="flex justify-center items-center">
-              <i class="material-icons teal-text lighten-2">play_arrow</i>
-              <p>Data Security: Top-level encryption, advanced threat protection, and compliance management</p>
-            </div>
-            <div class="flex justify-center items-center">
-              <i class="material-icons teal-text lighten-2">play_arrow</i>
-              <p>Database Security: Complete database monitoring, real-time alerts, and compliance support</p>
-            </div>
-            <div class="flex justify-center items-center">
-              <i class="material-icons teal-text lighten-2">play_arrow</i>
-              <p>Cloud Security: Full-spectrum cloud security, including advanced threat intelligence and automated responses</p>
-            </div>
-          </div>
-          <div class="teal lighten-2 flex items-center justify-center text-white w-28 h-8 transform transition-transform duration-200 hover:scale-110 active:scale-100">
-            <button class="">Get Started</button>
-          </div>
+
+        <div class="menu">
+          <!-- <div class="close-menu">
+                                         <ion-icon name="close"></ion-icon>
+                                   </div> -->
+
         </div>
       </div>
-      
+    </div>
   </section>
+  `;
+  };
 
-    
-    `;
-};
-
-Pricing();
+  navbar();

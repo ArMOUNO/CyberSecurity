@@ -8,62 +8,39 @@ const ourService = () => {
 
 const ourServiceBar = () => {
   return `
-<section class="flex flex-col items-center justify-center">
- <p class="text-center md:mb-[40px] font-bold lg:text-3xl md:text-2xl text-xl">With Quality Services for You</p>    
-<div class="carousel lg:mt-1">
-        <div id="listLg" class="list lg:mt-10">
-            <div class="banner ">
-                <img src="../../assets/images/blurSlide/img1.png" alt="Data security image" />
-                <div id="intro" class="introduce ">
-                    <div class="bolder text-xl md:text-2xl pb-6">Data Security</div>
-                    <div class="des text-xl">
-                        We utilize advanced encryption and access controls to protect your data from unauthorized access and breaches, ensuring its confidentiality and integrity.
-                    </div>
-                </div>
-            </div>
-            <div class="banner">
-                <img src="../../assets/images/blurSlide/network.png" alt="Network security image" />
-                <div class="introduce">
-                    <div class="bolder text-xl md:text-2xl pb-6">Network Security</div>
-                    <div class="des text-xl">
-                        Our comprehensive network security solutions defend against intrusions, malware, and other threats, keeping your network infrastructure robust and resilient.
-                    </div>
-                </div>
-            </div>
-            <div class="banner">
-                <img class="lg:pl-20 md:pl-30" src="../../assets/images/blurSlide/database.png" alt="Database security image" />
-                <div class="introduce">
-                    <div class="bolder text-xl md:text-2xl pb-6">Database Security</div>
-                    <div class="des text-xl  ">
-                        <p>We implement stringent security measures to secure your ensuring the safety and integrity of your valuable information.
-                    </div>
-                </div>
-            </div>
-            <div class="banner">
-                <img src="../../assets/images/blurSlide/cloud.png" alt="Cloud security image" />
-                <div class="introduce">
-                    <div class="bolder text-xl md:text-2xl pb-6">Cloud Security</div>
-                    <div class="des text-xl">
-                        Our cloud security solutions provide advanced protection for your cloud-based applications and data, ensuring compliance and safeguarding against potential vulnerabilities and threats.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-<div class="flex gap-40 lg:mt-10">
-  <!-- Previous Button -->
-  <div id="prev" class="flex justify-center items-center cursor-pointer rounded-3xl bg-cyan-200 hover:bg-green-200 bg-opacity-25 w-32 transform transition-transform duration-300 ease-in-out hover:scale-110 active:scale-95">
-    <img  class="w-12" src="./assets/images/chevrons-left.svg" alt="Previous" />
-  </div>
-
-  <!-- Next Button -->
-  <div id="next" class="flex justify-center items-center cursor-pointer rounded-3xl bg-cyan-200 hover:bg-green-200 bg-opacity-25 w-32 transform transition-transform duration-300 ease-in-out hover:scale-110 active:scale-95">
-    <img  class="w-12" src="./assets/images/chevrons-right.svg" alt="Next" />
-  </div>
-</div>
-
-</section>
+     <section>
+         <div class="flex flex-col gap-y-11 md:mx-20 ">
+            <p class="text-center lg:text-2xl md:text-2xl text-lg bolder">With Quality services for you</p>
+             <div class="flex flex-col md:flex-row items-center justify-start gap-12">
+                     <div class="bg-white border shadow-xl  z-10 thinText w-[340px] md:w-[377px] h-[320px] flex flex-col items-center justify-center">
+                        <img class="w-24  pt-5" src="/assets/images/service (1).png" alt="">
+                        <p class="font-bold  text-xl" style="color: #18AEA5;">Data security</p>
+                        <p class="p-2 text-lg px-3">We utilize advanced encryption and access controls to protect your data from unauthorized access and breaches, ensuring its confidentiality and integrity.</p>
+                        <button class="text-white p-1"  style="background-color: #18AEA5;">See Details</button>    
+                  </div>
+                      <div class="bg-white border shadow-xl  z-10 thinText w-[340px] md:w-[377px] h-[320px] flex flex-col items-center justify-center">
+                        <img class="w-24  pt-5" src="/assets/images/service (2).png" alt="">
+                        <p class="font-bold  text-xl" style="color: #18AEA5;">Network Security</p>
+                        <p class="p-2 text-lg px-3">Our comprehensive network security solutions defend against intrusions, malware, and other threats, keeping your network infrastructure robust and resilient.</p>
+                        <button class="text-white p-1"  style="background-color: #18AEA5;">See Details</button>
+                  </div>
+             </div>
+             <div class="flex flex-col md:flex-row items-center justify-end gap-12">
+                  <div class="bg-white border shadow-xl  z-10 thinText w-[340px] md:w-[377px] h-[320px] flex flex-col items-center justify-center">
+                     <img class="w-24  pt-5" src="/assets/images/service (3).png" alt="">
+                     <p class="font-bold  text-xl" style="color: #18AEA5;">Database security</p>
+                     <p class="p-2 text-lg px-3">We implement stringent security measures to secure your databases from unauthorized access, breaches, and attacks, ensuring the safety and integrity of your valuable information.</p>
+                     <button class="text-white p-1"  style="background-color: #18AEA5;">See Details</button>
+                   </div>
+                   <div class="bg-white border shadow-xl  z-10 thinText w-[340px] md:w-[377px] h-[320px] flex flex-col items-center justify-center">
+                     <img class="w-24  pt-5" src="/assets/images/service (4).png" alt="">
+                     <p class="font-bold  text-xl" style="color: #18AEA5;">Cloud security</p>
+                     <p class="p-2 text-lg px-3">Our cloud security solutions provide advanced protection for your cloud-based applications and data, ensuring compliance and safeguarding against potential vulnerabilities and threats.</p>
+                     <button class="text-white p-1"  style="background-color: #18AEA5;">See Details</button>
+                  </div>
+          </div>
+         </div>
+     </section>
 
     `;
 };

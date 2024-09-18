@@ -18,7 +18,7 @@ const PricingBar = () => {
   </div>
 
   <!-- Second Column (Description Section) -->
-  <div class="md:w-[360px] pb-9 w-fit">
+   <div class="md:w-[360px] pb-9 w-fit">
     <p>We offer competitive pricing tailored to fit your business needs and budget. Our transparent pricing model ensures you receive the best value for high-quality cybersecurity services, without any hidden costs.</p>
   </div>
 </div>

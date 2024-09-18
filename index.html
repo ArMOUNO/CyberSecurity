@@ -12,7 +12,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
-    
+  <link href="https://cdn.jsdelivr.net/npm/float-ui@1.0.0/dist/float-ui.min.css" rel="stylesheet">
+
   <!-- font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,7 +36,24 @@
     <div id="ourService"></div>  
     <div id="happyClient"></div>
     <div id="Pricing"></div>
-     
+     <section class="flex flex-col items-center pt-9">
+      <p class="bolder pt-4 text-center lg:text-2xl md:text-2xl text-lg">What Our Customers Said About Us</p>
+      <swiper-container class="mySwiper" navigation="true" pagination="true" pagination-dynamic-bullets="true">
+            <swiper-slide class="h-[300px] px-20"><div class=" mx-5 text-sm md:text-lg"><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, </p>
+            <p class="bolder text-xl pt-2"style="color:#18AEA5;"> Saif Muntasir</p> <p>CEO of Abc</p></div>      
+            </swiper-slide>
+            <swiper-slide class="h-[300px] px-20"><div class=" mx-5 text-sm md:text-lg"><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, </p>
+            <p class="bolder text-xl pt-2"style="color:#18AEA5;"> Saif Muntasir</p> <p>CEO of Abc</p>
+            </div></swiper-slide>
+            <swiper-slide class="h-[300px] px-20"><div class=" mx-5 text-sm md:text-lg"><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, </p>
+             <p class="bolder text-xl pt-2"style="color:#18AEA5;"> Saif Muntasir</p> <p>CEO of Abc</p>
+            </div></swiper-slide>
+            <swiper-slide class="h-[300px] px-20"><div class=" mx-5 text-sm md:text-lg"><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, </p>
+             <p class="bolder text-xl pt-2"style="color:#18AEA5;"> Saif Muntasir</p> <p>CEO of Abc</p>
+            </div></swiper-slide>
+         
+          </swiper-container>
+     </section>
     <div id="Footer"></div>
   </section>
 
@@ -51,8 +69,11 @@
     <script src="./Components/homePage/Pricing.js"></script>
     <script src="./Components/LayoutComponent/Footer.js"></script>
 
- <!-- Include jQuery for Materialize JS --> 
-  <script src="./js/script.js"></script>    
+ <!-- Include jQuery or others JS script --> 
+  <script src="./js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>  
+  <script src="https://cdn.jsdelivr.net/npm/float-ui@1.0.0/dist/float-ui.min.js"></script>
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
  
@@ -64,6 +85,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
   <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
+  <script>
+      // Initialize dropdowns
+      FloatUI.init();
+    </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
   <script>
     tailwind.config = {
@@ -135,6 +160,8 @@
           });
 
     </script>
-
+<script>
+      
+</script>
 </body>
 </html>

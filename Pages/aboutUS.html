@@ -21,15 +21,150 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&display=swap" rel="stylesheet">
+  <style>
+          @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Poppins;
+        }
+.home-container {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #d1d422; */
+    gap: 20px; /* Optional: space between grid items */
+}
+
+@media (min-width: 1024px) {
+    /* For large screens (lg), 4 columns */
+    .home-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* For medium screens (md), 3 columns */
+    .home-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    /* For small screens (sm), 2 columns */
+    .home-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+        .profile-card{
+            position: relative;
+            width: 220px;
+            height: 220px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 50%;
+            box-shadow: -5px 8px 45px rgba(51, 51, 51, 0.126);
+            transition: all .4s;
+            margin: 0 20px;
+        }
+        .profile-card:hover{
+            border-radius: 10px;
+            height: 260px;
+        }
+        .profile-card .img{
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .profile-card:hover img{
+            border-radius: 10px;
+            transform: translateY(-70px);
+        }
+        .img img{
+            object-fit: fill;
+            width: 100%;
+            border-radius: 50%;
+            transition: all .4s;
+            z-index: 99;
+        }
+        .caption{
+            text-align: center;
+            transform: translateY(-90px);
+            opacity: 0;
+            pointer-events: none;
+            transition: all .5s;
+        }
+        .profile-card:hover .caption{
+            opacity: 1;
+            pointer-events: all;
+        }
+        .caption h3{
+            font-size: 21px;
+            color: #18AEA5;
+            font-weight: 600;
+        }
+        .caption p{
+            font-size: 15px;
+            font-weight: 500;
+            margin: 2px 0 12px 0;
+        }
+        .caption .social-links i{
+            font-size: 21px;
+            margin: 0 3px;
+            cursor: pointer;
+            color: #333;
+            transition: all .4s;
+        }
+        .caption .social-links i:hover{
+            color: #0c52a1;
+        }
+
+  @media (max-width: 767px) {
+    /* For small screens (sm), 2 columns */
+    .profile-card{
+            position: relative;
+            width: 140px;
+            height: 140px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 50%;
+            box-shadow: -5px 8px 45px rgba(51, 51, 51, 0.126);
+            transition: all .4s;
+            margin: 0 20px;
+        }
+        .profile-card:hover{
+            border-radius: 10px;
+            height: 180px;
+            width: 160px;
+        }
+        .caption h3{
+            font-size: 14px;
+            padding-top: 10px;
+            font-weight: 600;
+        }
+        .caption p{
+            font-size: 12px;
+            font-weight: 500;
+            margin: 2px 0 12px 0;
+        }
+}
+
+  </style>
 </head>
 
 <body class="thinText">
  <section>
     <div id="navbar" ></div>
     <section class=" p-6 ">
-        <p class=" text-center lg:text-6xl  md:text-2xl text-xl bolder">About US</p>
+      
         <div class="flex flex-col-reverse md:flex-row  justify-center items-center">
-             <p class="lg:text-4xl md:text-2xl bolder text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor id aliquam dignissim risus diam dictum.</p>
+          <div class="flex flex-col items-start justify-start gap-y-6">
+            <p class=" text-center lg:text-6xl  md:text-2xl text-xl bolder">About US</p>
+             <p class="lg:text-3xl md:text-2xl text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor id aliquam dignissim risus diam dictum.</p>
+          </div>
              <img class="lg:w-[600px] md:w-[400px]" src="../assets/images/AboutUs/3026238.jpg" alt="">
          </div>
          <div class="md:flex justify-between items-center px-3">
@@ -54,7 +189,7 @@
     </section>
     <section class=" p-6">
         <div class="flex justify-around md:flex-row flex-col-reverse px-3 items-center">
-            <div class="text-start pt-8 flex flex-col   w-[380px] lg:w-[700px] gap-y-5">
+            <div class="text-start pt-8 flex flex-col   w-[350px] lg:w-[700px] gap-y-5">
                 <p class="bolder text-left ">WelCome</p>
                 <p class="lg:text-5xl text-3xl bolder ">Hello Worldwide,
                     welcome to  <span style="color: #18AEA5;">Techno Path</span> </p>
@@ -66,13 +201,72 @@
 
             </div>
                <div class="h-[400px] bg-yellow-500 w-[260px] shadow-2xl overflow-hidden shadow-black border-[20px] rounded-full border-gray-100">
-                  <img class="w-[800px] h-[400px] ml-4 " src="../assets/images/AboutUs/boss.png" alt="">
+                  <img class="w-[700px] h-96 " src="../assets/images/AboutUs/boss.png" alt="">
                </div>
             </div>
     </section>
-    <section>
+    <section class="p-7 ">
         <div>
-            <p class="text-4xl bolder">Our Talents</p>
+          <p class="text-4xl shadow flex justify-start items-center w-fit pr-44 pl-3" style="background-color: #18AEA5;" >Our Talents</p>
+          <div class="home-container mt-5 shadow p-7 ">
+            <div class="profile-card">
+                <div class="img">
+                    <img src="./../assets/images/EmployePic/man.png">
+                </div>
+                <div class="caption">
+                    <h3>Tom Cruise</h3>
+                    <p>Full Stack Developer</p>
+                    <div class="social-links">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="img">
+                    <img src="./../assets/images/EmployePic/man.png">
+                </div>
+                <div class="caption">
+                    <h3>David Wornar</h3>
+                    <p>Front End Developer</p>
+                    <div class="social-links">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-card">
+              <div class="img">
+                  <img src="./../assets/images/EmployePic/man.png">
+              </div>
+              <div class="caption">
+                  <h3>David Wornar</h3>
+                  <p>Front End Developer</p>
+                  <div class="social-links">
+                      <i class="fa-brands fa-facebook"></i>
+                      <i class="fa-brands fa-twitter"></i>
+                      <i class="fa-brands fa-instagram"></i>
+                  </div>
+              </div>
+          </div>
+            <div class="profile-card">
+                <div class="img">
+                    <img src="./../assets/images/EmployePic/man.png">
+                </div>
+                <div class="caption">
+                    <h3>Vin Diesel</h3>
+                    <p>Back End Developer</p>
+                    <div class="social-links">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         </div>
     </section>
     <div id="Footer"></div>
