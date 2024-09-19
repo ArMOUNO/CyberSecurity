@@ -26,8 +26,8 @@ const PricingBar = () => {
       </div>
       <div class="grid gap-10 justify-center px-4 items-start grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <!-- First Column (Basic) -->
-        <div class="shadow h-[400px] flex flex-col justify-center items-center gap-y-10 ">
-          <div class="flex flex-col justify-center pl-3 items-start">
+        <div class="shadow h-[410px] flex flex-col justify-center items-center gap-y-10 ">
+          <div class="flex flex-col justify-center mt-3 pl-3 items-start">
             <p class="bolder">Basic</p>
             <p class="text-2xl bolder">৳ 115,99/<span class="teal-text lighten-2 text-sm">Service</span></p>
           </div>
@@ -59,8 +59,8 @@ const PricingBar = () => {
         </div>
       
         <!-- Second Column (Best Value) -->
-        <div class="rounded-xl h-[400px] text-white teal lighten-2 flex flex-col justify-center items-center gap-y-10 ">
-          <div class="flex flex-col justify-center pl-3 items-start">
+        <div class="rounded-xl h-[410px] text-white teal lighten-2 flex flex-col justify-center items-center gap-y-10 ">
+          <div class="flex mt-3 flex-col justify-center pl-3 items-start">
             <p class="bolder">Best Value</p>
             <p class="text-2xl bolder">৳ 200,99/<span class=" text-sm">Service</span></p>
           </div>
@@ -88,8 +88,8 @@ const PricingBar = () => {
         </div>
       
         <!-- Third Column (Premium) with Col Span on Small Screens -->
-        <div class="shadow h-[400px] flex flex-col justify-center items-center gap-y-4  lg:col-span-1 md:col-span-2 col-span-1">
-          <div class="flex flex-col justify-center pl-3 items-start">
+        <div class="shadow h-[410px] flex flex-col justify-center items-center gap-y-4  lg:col-span-1 md:col-span-2 col-span-1">
+          <div class="flex mt-3 flex-col justify-center pl-3 items-start">
             <p class="bolder">Premium</p>
             <p class="text-2xl bolder">৳ 200,99/<span class="teal-text lighten-2 text-sm">Service</span></p>
           </div>

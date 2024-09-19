@@ -91,6 +91,50 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
   <script>
+      // Function to set the active link and store it in local storage
+      const setActiveLink = (navLinks, clickedLink) => {
+        // Remove 'active' class from all links
+        navLinks.forEach(link => link.classList.remove('active'));
+    
+        // Add 'active' class to the clicked link
+        clickedLink.classList.add('active');
+    
+        // Save the clicked link's href (or ID) in local storage
+        localStorage.setItem('activeLink', clickedLink.getAttribute('href'));
+      };
+    
+      // Function to set the active link from local storage when page loads
+      const applyActiveLinkFromStorage = (navLinks) => {
+        // Get the active link href from local storage
+        const storedActiveLink = localStorage.getItem('activeLink');
+    
+        // If there's a stored active link, apply the 'active' class
+        if (storedActiveLink) {
+          navLinks.forEach(link => {
+            if (link.getAttribute('href') === storedActiveLink) {
+              link.classList.add('active');
+            }
+          });
+        }
+      };
+    
+      document.addEventListener('DOMContentLoaded', function () {
+        const navLinks = document.querySelectorAll('.nav-link');
+    
+        // Apply the active link from local storage on page load
+        applyActiveLinkFromStorage(navLinks);
+    
+        // Add click event listener to each link
+        navLinks.forEach(navLink => {
+          navLink.addEventListener('click', () => {
+            setActiveLink(navLinks, navLink);
+          });
+        });
+      });
+    </script>
+    
+    
+  <script>
     tailwind.config = {
       theme: {
         extend: {

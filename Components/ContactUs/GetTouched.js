@@ -40,7 +40,7 @@ const getouchedBar = () => {
                             </div>
                             <div class="details">
                                 <span>Email</span>
-                                <span>l@gmail.com</span>
+                                <span>info@technopathsys.com</span>
                             </div>
                         </div>
     
@@ -50,7 +50,7 @@ const getouchedBar = () => {
                             </div>
                             <div class="details">
                                 <span>Location</span>
-                                <span>X Street, Y Road, San Fransisco</span>
+                                <span>North Badda,Gulshan,Dhaka</span>
                             </div>
                         </div>
     

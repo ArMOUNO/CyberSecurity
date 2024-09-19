@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // hover: true,         // Optional, enable hover to trigger the dropdown
   });
 });
+
+
 //   sideNav
   document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
@@ -168,7 +170,6 @@ function sendMail(event) {
     email: document.getElementById("email").value,
     message: document.getElementById("message").value,
   };
-  console.log(params);
 
   const serviceID = "service_drlr516";
   const templateID = "template_1thzj6v";

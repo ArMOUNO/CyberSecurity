@@ -22,8 +22,8 @@ return `
  
  </div>
  <div class="md:ml-8 ml-4 rounded-lg md:pt-3 pt-8 flex gap-x-4">
-   <a class="waves-effect waves-light btn  teal darken-1 ">More</a>
-   <a class="waves-effect waves-light btn  teal darken-1">Contact US</a>
+   <a href="../../Pages/aboutUS.html" class="waves-effect waves-light btn  teal darken-1 ">More</a>
+   <a href="../../Pages/ContactUs.html" class="waves-effect waves-light btn  teal darken-1">Contact US</a>
  </div>            
 </div>
 <img id="LargePlusImg" class="z-10  animate-scale-up md:block md:w-[350px]  lg:w-[500px]" src="./assets/images/heropic.png" alt="">

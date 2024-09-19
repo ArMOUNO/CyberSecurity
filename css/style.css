@@ -30,6 +30,11 @@
   }
 } */
 
+.nav-link.active {
+  color: #09ac8f !important; /* Adds important to color */
+  transform: scale(1.05) !important;
+  border-bottom: #09ac8f!important; /* Adds important to transform */
+}
 
 
 /* Change color on hover */
@@ -40,6 +45,7 @@
 .navDark a span {
   border-color: #09ac8f;
 }
+
 
 @media (min-width: 1799px) {
   .carousel .list .banner:nth-child(2) .introduce{
@@ -100,24 +106,52 @@ body{overflow-x: hidden;}
     overflow: hidden;
   }
   /* General dropdown width adjustment */
-.dropdown-content {
-  min-width: 250px; /* Adjust the width as needed */
-}
+
 
 /* If you want to target specific dropdowns */
 #dropdown1 {
-  min-width: fit-content; /* Adjust width for dropdown1 */
+  min-width: fit-content; 
+  overflow-x: hidden;/* Adjust width for dropdown1 */
 }
 
 #dropdown2 {
-  min-width: fit-content; /* Adjust width for dropdown2 */
+  min-width: fit-content;
+  overflow-x: hidden; /* Adjust width for dropdown2 */
 }
 
 #dropdown3 {
-  min-width: fit-content; /* Adjust width for dropdown3 */
+  min-width: fit-content; 
+  overflow-x: hidden;
 }
 
+#dropdown4 {
+  min-width: fit-content; 
+  overflow-x: hidden;
+}
+@media (max-width: 768px) {
+  #dropdown3 {
+    overflow-x: hidden;
+    min-width: fit-content;
+    background: rgba(129, 203, 189, 0.4);
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border-radius: 15px; 
+    border: 1px solid rgba(106, 30, 30, 0.2);
+    box-shadow: 0 4px 30px rgba(107, 52, 52, 0.1); /* Subtle shadow */
+  }
   
+  #dropdown4 {
+    overflow-x: hidden;
+    min-width: fit-content;
+    background: rgba(129, 203, 189, 0.4);
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border-radius: 15px; 
+    border: 1px solid rgba(106, 30, 30, 0.2);
+    box-shadow: 0 4px 30px rgba(107, 52, 52, 0.1);  
+  }
+ }
+
   @media (max-width: 820px) {
  .tabScren{
   height: fit-content;
@@ -1105,7 +1139,7 @@ section.left .socialMedia{
 	width: 100%;
 	font-size: 18px;
 	padding: 5px 8px;
-	color: #070707;
+	color: #1e1d1d;
 	border: none;
 	border-bottom: 2px solid #666;
 	outline: none;
@@ -1130,7 +1164,7 @@ textarea::-webkit-scrollbar-thumb{
 	left: 0;
   padding-bottom: 5px;
 	bottom: 9px;
-	color: #888;
+	color: #888888;
 	font-size: 18px;
 	transition: 0.4s;
 	pointer-events: none;

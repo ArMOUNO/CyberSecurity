@@ -11,7 +11,7 @@ const ourServiceBar = () => {
      <section>
          <div class="flex flex-col gap-y-11 md:mx-20 ">
             <p class="text-center lg:text-2xl md:text-2xl text-lg bolder">With Quality services for you</p>
-             <div class="flex flex-col md:flex-row items-center justify-start gap-12">
+             <div class="flex relative flex-col md:flex-row items-center justify-start gap-12">
                      <div class="bg-white border shadow-xl  z-10 thinText w-[340px] md:w-[377px] h-[320px] flex flex-col items-center justify-center">
                         <img class="w-24  pt-5" src="/assets/images/service (1).png" alt="">
                         <p class="font-bold  text-xl" style="color: #18AEA5;">Data security</p>
@@ -24,7 +24,9 @@ const ourServiceBar = () => {
                         <p class="p-2 text-lg px-3">Our comprehensive network security solutions defend against intrusions, malware, and other threats, keeping your network infrastructure robust and resilient.</p>
                         <button class="text-white p-1"  style="background-color: #18AEA5;">See Details</button>
                   </div>
+                   <div class="hidden lg:block"><img class="w-[250px] absolute left-[790px] z-0" src="../../assets/images/shadowcircle.png" alt="" /></div>
              </div>
+            
              <div class="flex flex-col md:flex-row items-center justify-end gap-12">
                   <div class="bg-white border shadow-xl  z-10 thinText w-[340px] md:w-[377px] h-[320px] flex flex-col items-center justify-center">
                      <img class="w-24  pt-5" src="/assets/images/service (3).png" alt="">
